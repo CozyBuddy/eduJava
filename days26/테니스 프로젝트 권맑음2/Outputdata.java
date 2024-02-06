@@ -11,6 +11,7 @@ public class Outputdata extends Pointraw {
 		//Outputdata();
 		
 	}
+	
 	public static void Outputdata() {
 		
 		try (FileWriter fw = new FileWriter(path,true);
@@ -43,12 +44,11 @@ public class Outputdata extends Pointraw {
 	                
 	            }
 	            int a=0 ;
-                //String b ;
-                for (int j = 0; j < 5; j++) {
-					a +=sets[j]-sets[j+5];
+                String b ;
+                for (int j = 0; j < sets.length; j++) {
+					a =sets[j]-sets[j+1];
 				}
-                pw.print(String.format("최종 경기 결과 승리팀은 %s팀입니다.\n", (a>=0 ?name1:name2)));
-                System.out.printf("최종 경기 결과 승리팀은 %s팀입니다.\n", (a>=0 ?name1:name2));
+                pw.print(String.format("최종 경기 결과 승리팀은 %s팀입니다.\n", (a>0 ?name1:name2)));
                 
 	         } catch (Exception e) {
 	                }
