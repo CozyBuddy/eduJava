@@ -1,24 +1,20 @@
-package days26;
+package tennis;
+
 
 import java.io.FileWriter;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.RandomAccessFile;
 import java.io.StringReader;
 
-public class Outputdata extends Pointraw {
-	static String path = ".\\src\\days26\\테니스결과.txt";
-	public static void main(String[] args) {
-		//Outputdata();
+public class OutputData extends Pointraw {
+	static String path = ".\\src\\tennis\\테니스결과.txt";
+	
+	public static void Outputdata() throws IOException  {
 		
-	}
-	public static void Outputdata() {
-		
-		try (FileWriter fw = new FileWriter(path,true);
-	               PrintWriter pw = new PrintWriter(fw);
-				
-				){
-			    pw.print(String.format("\t\t\t\t\t-------- %s팀과 %s팀의 테니스 시합 정보--------\n", name1,name2));
-				pw.print(String.format("[ %s팀    %s팀]", name1,name2));
+		FileWriter fw = new FileWriter(path,true);
+              PrintWriter pw = new PrintWriter(fw);
+				pw.print(String.format("\t\t\t\t\t-------- %s팀과 %s팀의 테니스 시합 정보--------\n", name1,name2));
 	            int i = 0;
 	            int k = 0;
 	            int l = 0;
@@ -30,8 +26,8 @@ public class Outputdata extends Pointraw {
 	               pw.print(String.format("%02d\t\n",alpoint.get(j+1)));
 	                if (count3.get(i)==k) {
 	                   System.out.println();
-	                   pw.print("┄".repeat(11)+"\n");
-	                   i++;
+	                   pw.print("┄".repeat(15)+"\n");
+	                   i=i+1;
 	                   k=0;
 	               }
 	                if (pointCount[m]==l ) {
@@ -51,14 +47,12 @@ public class Outputdata extends Pointraw {
                 pw.print(String.format("최종 경기 결과 승리팀은 %s팀입니다.\n", (a>=0 ?name1:name2)));
                 System.out.printf("최종 경기 결과 승리팀은 %s팀입니다.\n", (a>=0 ?name1:name2));
                 
-	         } catch (Exception e) {
-	                }
-	         
-	      }
+	         pw.flush();
+           
+	     }
 	   
 	
 }
 
 	
-
 
