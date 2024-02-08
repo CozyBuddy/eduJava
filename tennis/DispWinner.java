@@ -224,7 +224,7 @@ public class DispWinner extends Pointraw  {
 			count3.add(count2);
 			count2=0;
 			System.out.println("이 게임 승자는" + Tennis.list.get(0).getTeam().getTeamName() +"팀");
-			if (games[count+5]==6) {
+			if (games[count]==6) {
 				System.out.println("이 세트 승자는" + Tennis.list.get(0).getTeam().getTeamName()+ "팀");
 				sets[count+5]++;
 				count++;
