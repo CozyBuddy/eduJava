@@ -1,4 +1,5 @@
-package days26;
+package tennis2;
+
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,54 +9,21 @@ import java.util.Collections;
 import java.util.Random;
 import java.util.Scanner;
 
-public class DispWinner extends Pointraw implements Tennis {
+public class DispWinner extends Pointraw  {
 	//포인트를 받아서 출력하기 때문에 마지막 게임수를 즉시 올릴지?
-	public static void main(String[] args) throws IOException {
-		String a = "김진영"; //팀명
-		String b = "신슬기"; //팀명
-		Scanner sc = new Scanner(System.in);
-		String e ;
-		char f;
-		do {
-			
-			
-			System.out.print("A팀 포인트를 입력하세요");
-			int c = sc.nextInt();
-			System.out.print("B팀 포인트를 입력하세요");
-			int d = sc.nextInt();
-			
-			disppointBoard(a , b , c ,d);
-			
-			System.out.print("계속 할려면 Y");
-			f = (char)System.in.read();
-			System.in.skip(System.in.available());
-		} while (Character.toUpperCase(f)=='Y');
-		//System.out.println(Arrays.toString(games));
-		Outputdata.Outputdata();
-		
-	
-		
-		
-		//disppointBoard(a , b , c ,d);
-		
-	}
 	
 	
 	//현재의 스코어보드를 화면에 출력한다.
-	public static void disppointBoard(String n , String m, int c  ,int d) {   
-		name1 = n;
-		name2 = m;
+	public static void disppointBoard(String name , String name2, int c  ,int d) {   
 		count2++;
 		pointCount[count]++;
 		point[count]+=c;
-		tempPoint1[count] = point[count];
-		tempPoint2[count] = point[count];
 		point[count+5]+=d;
 		alpoint.add(point[count]);
 		alpoint.add(point[count+5]);
 		
 		
-		if (point[count]>=40 && point[count+5]<30&&(point[count]-point[count+5])>10 ||point[count]>=40 &&point[count+5]>30 && (point[count]-point[count+5])>20 ) {
+		if (point[count]>=40 && point[count+5]<=30&&(point[count]-point[count+5])>=10 ||point[count]>=40 &&point[count+5]>=40 && (point[count]-point[count+5])>=20 ) {
 			
 			games[count]++;
 			System.out.println("┌"+"━".repeat(78)+"┐");
@@ -67,7 +35,7 @@ public class DispWinner extends Pointraw implements Tennis {
 			System.out.println("┃         ┃"+" ".repeat(68)+"┃");
 			System.out.println("┃         ┃"+" ".repeat(68)+"┃");
 			System.out.println("┃         ┃"+" ".repeat(10)+games[0]+" ".repeat(11)+games[1]+" ".repeat(11)+games[2]+" ".repeat(11)+games[3]+" ".repeat(11)+games[4]+"         ┃");
-			System.out.println("┃  "+name1+"   ┃"+" ".repeat(8)+"("+point[0]+")"+" ".repeat(9)+"("+point[1]+")"+" ".repeat(9)+"("+point[2]+")"+" ".repeat(9)+"("+point[3]+")"+" ".repeat(9)+"("+point[4]+")"+"        ┃");
+			System.out.println("┃  "+name+"   ┃"+" ".repeat(8)+"("+point[0]+")"+" ".repeat(9)+"("+point[1]+")"+" ".repeat(9)+"("+point[2]+")"+" ".repeat(9)+"("+point[3]+")"+" ".repeat(9)+"("+point[4]+")"+"        ┃");
 			
 			
 			System.out.println("┃         ┃"+" ".repeat(68)+"┃");
@@ -82,21 +50,21 @@ public class DispWinner extends Pointraw implements Tennis {
 			System.out.println("└"+"━".repeat(78)+"┘");
 			point[count]=0;
 			point[count+5]=0;
-			System.out.println("이 게임 승자는" + name1 +"팀");
+			System.out.println("이 게임 승자는" + name +"팀");
 			//gamesCount[count]++;
 			count3.add(count2);
 			
 			count2=0;
 			
 			if (games[count]==6) {
-				System.out.println("이 세트 승자는" + name1 + "팀");
+				System.out.println("이 세트 승자는" + name + "팀");
 				sets[count]++;
 				count++;
 				
 				
 				
 			}
-		} else if (point[count+5]>=40 && point[count]<30&& (point[count+5]-point[count])>10 ||point[count+5]>=40 && point[count]>30 &&(point[count+5]-point[count])>20) {
+		} else if (point[count+5]>=40 && point[count]<=30&& (point[count+5]-point[count])>=10 ||point[count+5]>=40 && point[count]>=40 &&(point[count+5]-point[count])>=20) {
 			
 			games[count+5]++;
 			System.out.println("┌"+"━".repeat(78)+"┐");
@@ -108,7 +76,7 @@ public class DispWinner extends Pointraw implements Tennis {
 			System.out.println("┃         ┃"+" ".repeat(68)+"┃");
 			System.out.println("┃         ┃"+" ".repeat(68)+"┃");
 			System.out.println("┃         ┃"+" ".repeat(10)+games[0]+" ".repeat(11)+games[1]+" ".repeat(11)+games[2]+" ".repeat(11)+games[3]+" ".repeat(11)+games[4]+"         ┃");
-			System.out.println("┃  "+name1+"   ┃"+" ".repeat(8)+"("+point[0]+")"+" ".repeat(9)+"("+point[1]+")"+" ".repeat(9)+"("+point[2]+")"+" ".repeat(9)+"("+point[3]+")"+" ".repeat(9)+"("+point[4]+")"+"        ┃");
+			System.out.println("┃  "+name+"   ┃"+" ".repeat(8)+"("+point[0]+")"+" ".repeat(9)+"("+point[1]+")"+" ".repeat(9)+"("+point[2]+")"+" ".repeat(9)+"("+point[3]+")"+" ".repeat(9)+"("+point[4]+")"+"        ┃");
 			
 			
 			System.out.println("┃         ┃"+" ".repeat(68)+"┃");
@@ -126,7 +94,7 @@ public class DispWinner extends Pointraw implements Tennis {
 			
 			
 			//gamesCount[count+5]++;
-			count3.add(count2); //이긴 게임 수를 계산
+			count3.add(count2);
 			count2=0;
 			System.out.println("이 게임 승자는" + name2 +"팀");
 			if (games[count+5]==6) {
@@ -146,7 +114,7 @@ public class DispWinner extends Pointraw implements Tennis {
 			System.out.println("┃         ┃"+" ".repeat(68)+"┃");
 			System.out.println("┃         ┃"+" ".repeat(68)+"┃");
 			System.out.println("┃         ┃"+" ".repeat(10)+games[0]+" ".repeat(11)+games[1]+" ".repeat(11)+games[2]+" ".repeat(11)+games[3]+" ".repeat(11)+games[4]+"         ┃");
-			System.out.println("┃  "+name1+"   ┃"+" ".repeat(8)+"("+point[0]+")"+" ".repeat(9)+"("+point[1]+")"+" ".repeat(9)+"("+point[2]+")"+" ".repeat(9)+"("+point[3]+")"+" ".repeat(9)+"("+point[4]+")"+"        ┃");
+			System.out.println("┃  "+name+"   ┃"+" ".repeat(8)+"("+point[0]+")"+" ".repeat(9)+"("+point[1]+")"+" ".repeat(9)+"("+point[2]+")"+" ".repeat(9)+"("+point[3]+")"+" ".repeat(9)+"("+point[4]+")"+"        ┃");
 			
 			
 			System.out.println("┃         ┃"+" ".repeat(68)+"┃");
@@ -160,9 +128,6 @@ public class DispWinner extends Pointraw implements Tennis {
 			System.out.println("┃         ┃"+" ".repeat(68)+"┃");
 			System.out.println("└"+"━".repeat(78)+"┘");
 			
-			//gamesCount[count+5]++;
-			count3.add(count2);
-			count2=0;
 		}
 		
 		
@@ -185,6 +150,5 @@ public class DispWinner extends Pointraw implements Tennis {
 	}
 	
 }
-
 
 

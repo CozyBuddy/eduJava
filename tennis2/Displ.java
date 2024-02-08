@@ -1,4 +1,4 @@
-package tennis;
+package tennis2;
 
 import java.io.*;
 import java.nio.Buffer;
@@ -12,18 +12,17 @@ public class Displ {
 	HashMap<String, LinkedHashMap<String, String>> dispList;
 	Team team_List;
 
-	public Displ() throws IOException, InterruptedException {
+	public Displ() throws IOException {
 		dispMenu();
 		
 	}
 	
-	public void dispMenu() throws InterruptedException {
+	public void dispMenu() {
 		System.out.print("테니스 게임을 시작합니다.");
 
 		Rule rule = new Rule();
 		char con = 'n';
 		int n = 0;
-		int sum1 = 0, sum2 = 0;
 		try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
 				
 				System.out.print(" 1.단식 , 2.복식 ");
@@ -32,49 +31,26 @@ public class Displ {
 					// 여기서 복식 단식이 결정되서 들어오면
 					// 조건문 줘서 단식일 경우 game.singlesGameWin();
 					// 복식일경우 game.doublesGameWin();
-					for (int i = 0; i < 5; i++) {
-						sum1 += Pointraw.sets[i];
-						sum2 += Pointraw.sets[i+5];
-					}
-					if(sum1 == 3 || sum2 == 3)break;
 						
 					Game game = new Game();
-					//game.singlesGameWin();
+//					game.singlesGameWin();
 					game.doublesGameWin();
 					for (Player player : Tennis.list) {
 						System.out.println(player);
 					}			
-					/*System.out.println("계속 진행하시려면 y를 눌러주세요 ");
+					System.out.println("계속 진행하시려면 y를 눌러주세요 ");
 					con = (char) System.in.read();
-					System.in.skip(System.in.available());*/
-					sum1 = 0;
-					sum2 = 0;
+					System.in.skip(System.in.available());
 					// 반복문을 이기는 사람이 나올때 까지
 					// 5게임 == 3set 이겼을때 반복문 빠져나가도록
 					// 3게임 == 2set 이겼을때 반복문 빠져나가도록
-				} while (true);
+				} while (Character.toUpperCase(con) == 'Y');
 					OutputData.Outputdata();
 				} else {
 					System.out.println("세팅한 룰이 성립하지 않습니다. ");
 				}
-//				for (int i = 0; i < 5; i++) {
-//					sum1 += Pointraw.sets[i];
-//					sum2 += Pointraw.sets[i+5];
-//				}
-//				if(sum1 == 3 || sum2 == 2)break;
-//					
-//				Game game = new Game();
-////				game.singlesGameWin();
-//				game.doublesGameWin();
-//				for (Player player : Tennis.list) {
-//					System.out.println(player);
-//				}			
-//				System.out.println("계속 진행하시려면 y를 눌러주세요 ");
-//				con = (char) System.in.read();
-//				System.in.skip(System.in.available());
-//				sum1 = 0;
-//				sum2 = 0;
-//			
+		
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

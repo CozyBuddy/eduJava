@@ -1,4 +1,4 @@
-package tennis;
+package tennis2;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -21,7 +21,7 @@ public class Game extends Pointraw{
 		return p;
 	}
 
-	public ArrayList singlesGameWin() throws InterruptedException {
+	public ArrayList singlesGameWin() {
 		Tennis.list.get(0).setScore(0);
 		Tennis.list.get(1).setScore(0);
 		Player p1 = Tennis.list.get(0); // 김길동
@@ -38,55 +38,48 @@ public class Game extends Pointraw{
 				// Player클래스에서 가져온 이름1번과 player의 이름이 같으면 1번선수의 포인트 증가
 				if(p1.getPlayerName().equals(player)){
 					if(cnt[0] <= 1) {
-						DispWinner.disppointBoard(p1.getPlayerName(), p2.getPlayerName(), 15, 0);
 						Tennis.list.get(n).setScore(playerPoint+5);
-						//Thread.sleep(1000);
-					}else {
-						DispWinner.disppointBoard(p1.getPlayerName(), p2.getPlayerName(), 10, 0);
-						Tennis.list.get(n).setScore(playerPoint);
-						//Thread.sleep(1000);
 						//System.out.printf("%s point : %s\n", p1.getPlayerName(), p1.getScore());
 						//System.out.printf("%s point : %s\n", p2.getPlayerName(), p2.getScore());
-						
+						DispWinner.disppointBoard(p1.getPlayerName(), p2.getPlayerName(), 15, 0);
+					}else {
+						Tennis.list.get(n).setScore(playerPoint);
+						//System.out.printf("%s point : %s\n", p1.getPlayerName(), p1.getScore());
+						//System.out.printf("%s point : %s\n", p2.getPlayerName(), p2.getScore());
+						DispWinner.disppointBoard(p1.getPlayerName(), p2.getPlayerName(), 10, 0);
 						// player1, 2의 포인트를 증가시킨다.
 					}
 					cnt[0]++;
 				}
 				else {
 					if(cnt[1] <= 1) {
-						DispWinner.disppointBoard(p1.getPlayerName(), p2.getPlayerName(), 0, 15);
 						Tennis.list.get(n).setScore(playerPoint+5);
-						//Thread.sleep(1000);
 						//System.out.printf("%s point : %s\n", p1.getPlayerName(), p1.getScore());
 						//out.printf("%s point : %s\n", p2.getPlayerName(), p2.getScore());
-						
+						DispWinner.disppointBoard(p1.getPlayerName(), p2.getPlayerName(), 0, 15);
 					}else {
-						DispWinner.disppointBoard(p1.getPlayerName(), p2.getPlayerName(), 0, 10);
 						Tennis.list.get(n).setScore(playerPoint);
-						//Thread.sleep(1000);
 						//System.out.printf("%s point : %s\n", p1.getPlayerName(), p1.getScore());
 						//System.out.printf("%s point : %s\n", p2.getPlayerName(), p2.getScore());
-						
+						DispWinner.disppointBoard(p1.getPlayerName(), p2.getPlayerName(), 0, 10);
 					}
 					cnt[1]++;
 				} // if
 				// 한 선수의 점수가 40점 초과할 때 차이가 20점이면 break;
 				if(p1.getScore() >= 40 || p2.getScore() >= 40) {
-					if(p1.getScore() - p2.getScore() >= 20 || p2.getScore() - p1.getScore() >= 20) {
+					if(p1.getScore() - p2.getScore() >= 20 || p2.getScore() - p1.getScore() >= 20)
 						cnt[0]=0;
 						cnt[1]=0;
 						
 						break out;
-					}
 				}
 				// 두선수의 점수가 40점일때 듀스
 				if(p1.getScore() >= 40 && p2.getScore() >= 40) {
 					// 두선수의 점수차이가 20점이나면 2게임을 이긴거니까 break;
-					if(p1.getScore() - p2.getScore() >= 20 || p2.getScore() - p1.getScore() >= 20) {
+					if(p1.getScore() - p2.getScore() >= 20 || p2.getScore() - p1.getScore() >= 20)
 						cnt[0]=0;
 					cnt[1]=0;
 					break out;
-					}
 				} // if
 			} // while
 		ArrayList playerList = new ArrayList();
@@ -104,7 +97,7 @@ public class Game extends Pointraw{
 	} // singlesGameWin()
 
 
-	public ArrayList doublesGameWin() throws InterruptedException {
+	public ArrayList doublesGameWin() {
 
 		// 팀1과 팀2에는 현재 Team클래스에서 받은 팀이 들어가있다.
 		Team team1 = Tennis.list.get(0).getTeam();
@@ -128,51 +121,40 @@ public class Game extends Pointraw{
 			if(team.equals(team1.getTeamName())) {
 				//System.out.println(team+team1.getTeamName());
 				if(cnt[0] <= 1) {
-					//System.out.printf("%s point : %d\n", team1.getTeamName(), team1.getScore());
-					//System.out.printf("%s point : %d\n", team2.getTeamName(), team2.getScore());
-					
-					Tennis.list.get(n).getTeam().setScore(teamPoint+5);
-					Thread.sleep(500);
-					//System.out.println(Tennis.list.get(n).getTeam().getScore());
 					DispWinner.disppointBoard(team1.getTeamName(), team2.getTeamName(), 15, 0);
-					
+					Tennis.list.get(n).getTeam().setScore(teamPoint+5);
+					System.out.println(Tennis.list.get(n).getTeam().getScore());
+					//System.out.printf("%s point : %s\n", team1.getTeamName(), team1.getScore());
+					//System.out.printf("%s point : %s\n", team2.getTeamName(), team2.getScore());
+					//DispWinner.disppointBoard(team1.getTeamName(), team2.getTeamName(), 15, 0);
 				}else {
 					// team1의 포인트 증가
-					//System.out.printf("%s point : %d\n", team1.getTeamName(), team1.getScore());
-					//System.out.printf("%s point : %d\n", team2.getTeamName(), team2.getScore());
-				   // DispWinner.disppointBoard(team1.getTeamName(), team2.getTeamName(), 10, 0);
-					Tennis.list.get(n).getTeam().setScore(teamPoint);
-					Thread.sleep(500);
-					//System.out.println(Tennis.list.get(n).getTeam().getScore());
-					
-					//DispWinner.disppointBoard(team1.getTeamName(), team2.getTeamName(), 10, 0);
 					DispWinner.disppointBoard(team1.getTeamName(), team2.getTeamName(), 10, 0);
+					Tennis.list.get(n).getTeam().setScore(teamPoint);
+					System.out.println(Tennis.list.get(n).getTeam().getScore());
+					//System.out.printf("%s point : %s\n", team1.getTeamName(), team1.getScore());
+					//System.out.printf("%s point : %s\n", team2.getTeamName(), team2.getScore());
+					
 
 				}
 				cnt[0]++;
 			}else {
 				if(cnt[1] <= 1) {
 					// 여기는 2번 팀의 점수를 증가하는 조건문
-					//System.out.printf("%s point : %d\n", team1.getTeamName(), team1.getScore());
-					//System.out.printf("%s point : %d\n", team2.getTeamName(), team2.getScore());
-					//
-					Tennis.list.get(n).getTeam().setScore(teamPoint+5);
-					Thread.sleep(500);
-					//System.out.println(Tennis.list.get(n).getTeam().getScore());
-					//System.out.printf("%s point : %d\n", team1.getTeamName(), team1.getScore());
-					//System.out.printf("%s point : %d\n", team2.getTeamName(), team2.getScore());
 					DispWinner.disppointBoard(team1.getTeamName(), team2.getTeamName(), 0 , 15);
+					Tennis.list.get(n).getTeam().setScore(teamPoint+5);
+					System.out.println(Tennis.list.get(n).getTeam().getScore());
+					//System.out.printf("%s point : %s\n", team1.getTeamName(), team1.getScore());
+					//System.out.printf("%s point : %s\n", team2.getTeamName(), team2.getScore());
+					//
 					
 				}else {
-					//System.out.printf("%s point : %d\n", team1.getTeamName(), team1.getScore());
-					//System.out.printf("%s point : %d\n", team2.getTeamName(), team2.getScore());
-					//DispWinner.disppointBoard(team1.getTeamName(), team2.getTeamName(), 0 , 10);
-					Tennis.list.get(n).getTeam().setScore(teamPoint);
-					//System.out.println(Tennis.list.get(n).getTeam().getScore());
-					Thread.sleep(500);
-					//System.out.printf("%s point : %d\n", team1.getTeamName(), team1.getScore());
-					//System.out.printf("%s point : %d\n", team2.getTeamName(), team2.getScore());
 					DispWinner.disppointBoard(team1.getTeamName(), team2.getTeamName(), 0 , 10);
+					Tennis.list.get(n).getTeam().setScore(teamPoint);
+					System.out.println(Tennis.list.get(n).getTeam().getScore());
+					//System.out.printf("%s point : %s\n", team1.getTeamName(), team1.getScore());
+					//System.out.printf("%s point : %s\n", team2.getTeamName(), team2.getScore());
+					//DispWinner.disppointBoard(team1.getTeamName(), team2.getTeamName(), 0 , 10);
 
 				}
 				cnt[1]++;
@@ -181,23 +163,17 @@ public class Game extends Pointraw{
 //			if (Pointraw.point[count]>=40 && Pointraw.point[count+5]<=30&&(Pointraw.point[count]-Pointraw.point[count+5])>=10 ||Pointraw.point[count]>=40 &&Pointraw.point[count+5]>=40 && (Pointraw.point[count]-Pointraw.point[count+5])>=20 ) break;
 //			else if (Pointraw.point[count+5]>=40 && Pointraw.point[count]<=30&& (Pointraw.point[count+5]-Pointraw.point[count])>=10 ||Pointraw.point[count+5]>=40 && Pointraw.point[count]>=40 &&(Pointraw.point[count+5]-Pointraw.point[count])>=20) break;
 			if(team1.getScore() >= 40 || team2.getScore() >= 40) {
-				if(team1.getScore() - team2.getScore() >= 20 || team2.getScore() - team1.getScore() >= 20 ) { 
+				if(team1.getScore() - team2.getScore() >= 20 || team2.getScore() - team1.getScore() >= 20 )
 					cnt[0]=0;
-				 cnt[1]=0;
-				// System.out.println("브레이크");
+				cnt[1]=0;
 				break;
-				}
 			}
 			// 두선수의 점수가 40점일때 듀스
 			if(team1.getScore() >= 40 && team2.getScore() >= 40) {
 				// 두선수의 점수차이가 20점이나면 2게임을 이긴거니까 break;
-				if(team1.getScore() - team2.getScore() >= 20 || team2.getScore() - team1.getScore() >= 20 ) {
+				if(team1.getScore() - team2.getScore() >= 20 || team2.getScore() - team1.getScore() >= 20 )
 					cnt[0]=0;
-				   cnt[1]=0;
-				   //System.out.println("브레이크");
-				   break;
-				   
-			}
+				cnt[1]=0;break;
 			} // if
 		} // while
 		//ArrayList<ArrayList> teamList = new ArrayList(); // 팀 정보값 2개해서 넘긴다.
