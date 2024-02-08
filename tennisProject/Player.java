@@ -1,4 +1,4 @@
-package tennis;
+package tennisProject;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -29,7 +29,7 @@ public class Player extends Team{
         this.playerName = playerName;
         this.age = age;
         this.gender = gender;
-        this.hashMap = hashMap;
+       // this.hashMap = hashMap;
 
     }
 

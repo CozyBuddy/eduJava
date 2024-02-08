@@ -1,4 +1,4 @@
-package tennis;
+package tennisProject;
 
 import javax.swing.text.Style;
 import java.io.BufferedReader;

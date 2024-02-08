@@ -1,4 +1,4 @@
-package tennis;
+package tennisProject;
 
 
 import java.io.FileWriter;
@@ -8,7 +8,7 @@ import java.io.RandomAccessFile;
 import java.io.StringReader;
 
 public class OutputData extends Pointraw {
-	static String path = ".\\src\\tennis\\테니스결과.txt";
+	static String path = ".\\src\\tennisProject\\테니스결과.txt";
 	
 	public static void Outputdata() throws IOException  {
 		

@@ -1,4 +1,4 @@
-package tennis;
+package tennisProject;
 
 public class Set implements Tennis{
 

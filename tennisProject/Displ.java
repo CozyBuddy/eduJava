@@ -1,4 +1,4 @@
-package tennis;
+package tennisProject;
 
 import java.io.*;
 import java.nio.Buffer;

@@ -1,0 +1,7 @@
+#encoding=UTF-8
+#\uBCF4\uACE0\uC2F6\uB2E4
+#Sat Feb 03 01:17:14 KST 2024
+password=tiger
+className=oracle.jdbc.driver.OracleDriver
+user=scott
+url=jdbc\:oracle\:thin\:@localhost\:1521\:xe

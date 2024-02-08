@@ -1,12 +1,14 @@
-package tennis;
+package tennisProject;
 
 import java.util.ArrayList;
+
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Random;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Data
@@ -132,7 +134,7 @@ public class Game extends Pointraw{
 					//System.out.printf("%s point : %d\n", team2.getTeamName(), team2.getScore());
 					
 					Tennis.list.get(n).getTeam().setScore(teamPoint+5);
-					Thread.sleep(500);
+					//Thread.sleep(300);
 					//System.out.println(Tennis.list.get(n).getTeam().getScore());
 					DispWinner.disppointBoard(team1.getTeamName(), team2.getTeamName(), 15, 0);
 					
@@ -142,7 +144,7 @@ public class Game extends Pointraw{
 					//System.out.printf("%s point : %d\n", team2.getTeamName(), team2.getScore());
 				   // DispWinner.disppointBoard(team1.getTeamName(), team2.getTeamName(), 10, 0);
 					Tennis.list.get(n).getTeam().setScore(teamPoint);
-					Thread.sleep(500);
+					//Thread.sleep(300);
 					//System.out.println(Tennis.list.get(n).getTeam().getScore());
 					
 					//DispWinner.disppointBoard(team1.getTeamName(), team2.getTeamName(), 10, 0);
@@ -157,7 +159,7 @@ public class Game extends Pointraw{
 					//System.out.printf("%s point : %d\n", team2.getTeamName(), team2.getScore());
 					//
 					Tennis.list.get(n).getTeam().setScore(teamPoint+5);
-					Thread.sleep(500);
+					//Thread.sleep(300);
 					//System.out.println(Tennis.list.get(n).getTeam().getScore());
 					//System.out.printf("%s point : %d\n", team1.getTeamName(), team1.getScore());
 					//System.out.printf("%s point : %d\n", team2.getTeamName(), team2.getScore());
@@ -169,7 +171,7 @@ public class Game extends Pointraw{
 					//DispWinner.disppointBoard(team1.getTeamName(), team2.getTeamName(), 0 , 10);
 					Tennis.list.get(n).getTeam().setScore(teamPoint);
 					//System.out.println(Tennis.list.get(n).getTeam().getScore());
-					Thread.sleep(500);
+					//Thread.sleep(300);
 					//System.out.printf("%s point : %d\n", team1.getTeamName(), team1.getScore());
 					//System.out.printf("%s point : %d\n", team2.getTeamName(), team2.getScore());
 					DispWinner.disppointBoard(team1.getTeamName(), team2.getTeamName(), 0 , 10);

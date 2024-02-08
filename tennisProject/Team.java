@@ -1,4 +1,4 @@
-package tennis;
+package tennisProject;
 
 import lombok.Getter;
 import lombok.Setter;
