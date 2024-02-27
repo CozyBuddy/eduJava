@@ -1,3 +1,0 @@
-select rownum "¼ø¹ø",custid,name,phone
-from customer
-where rownum<=2;
