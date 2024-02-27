@@ -1,0 +1,13 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT Distinct publisher
+FROM Book
+where price<15000;]]></sql>
+		<connection><![CDATA[MD_madang]]></connection>
+		<timestamp><![CDATA[1707640225098]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.012]]></execTime>
+	</historyItem>
+</history>

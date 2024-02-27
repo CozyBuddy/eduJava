@@ -1,0 +1,14 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT sum(saleprice) 김연아총매출
+FROM orders
+where custid=2;
+//order by price desc,bookname asc;]]></sql>
+		<connection><![CDATA[MD_madang]]></connection>
+		<timestamp><![CDATA[1707657345269]]></timestamp>
+		<type><![CDATA[Script]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.035]]></execTime>
+	</historyItem>
+</history>

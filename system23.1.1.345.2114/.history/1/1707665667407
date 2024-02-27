@@ -1,0 +1,13 @@
+SELECT name,address
+FROM customer cs
+where exists (select * from orders od where cs.custid=od.custid);
+--where customer.custid=orders.custid and orders.bookid=book.bookid and saleprice=20000
+--group by customer.name
+--order by customer.name;
+--where saleprice>=8000
+--group by custid
+--having count(*)>=2;
+
+--//order by custid;
+--//group by custid;
+--//order by price desc,bookname asc;

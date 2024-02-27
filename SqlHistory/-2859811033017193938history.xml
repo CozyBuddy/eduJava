@@ -1,0 +1,11 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[select * from v$instance;]]></sql>
+		<connection><![CDATA[MD_system]]></connection>
+		<timestamp><![CDATA[1707635673077]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.045]]></execTime>
+	</historyItem>
+</history>

@@ -1,0 +1,14 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT custid,count(*) 도서수량,sum(saleprice)총액
+FROM orders
+group by custid;
+//order by price desc,bookname asc;]]></sql>
+		<connection><![CDATA[MD_madang]]></connection>
+		<timestamp><![CDATA[1707657696320]]></timestamp>
+		<type><![CDATA[Script]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.042]]></execTime>
+	</historyItem>
+</history>

@@ -1,0 +1,67 @@
+/*DB 개요
+1)Data (데이터)
+    ㄴ 의미가 있는 정보를 가진 모든 값
+    ㄴ 정보 (information) -의미를 부여한 값(결과)
+    ㄴ 자료,논거라는 뜻인 "datum"의 복수형
+    
+2)DB(DataBase = data +base)
+    ㄴdata(자료)+base(저장소)
+    ㄴ공유되어 사용될 목적을 ㅗ통합 관리되는 "데이터의 집합"
+    ㄴ 현실 세계에서 존재하는 유형,무형 등 방대한 정보(자료)의 집합
+    
+3)DBMS (Database Management System)
+    ㄴ데이터의 집합을 관리하는 시스템
+    ㄴ소프트웨어 
+    ㄴ 오라클(Oracle) , My sql , ms 사 (ms sql) //추후 자바와 오라클 연동 예정
+    
+7.방화벽 해제 (1521 해제)
+    방화벽 defender에서 고급설정에서 새규칙
+    8. 용어
+    1)오라클 서버 (Oracle server)
+        ㄴ오라클이 설치된 본인 컴퓨터
+        ㄴ 오라클 데이터베이스 + 오라클 인스턴스로 구성된다.
+        2)오라클 데이터베이스(Oracle Database)
+            ㄴ오라클 데이터베이스 시스템 자체
+            3)오라클 인스턴스(Oracle Instance)
+                ㄴ 물리적인 파일에 접근하고  DB를 관리하기 위한 수단.
+                ㄴ SGA(메모리 영역) + Background Process  구성
+                4)전역 데이터베이스 이름
+                    ㄴ전세계에서 유일한 이름
+                    ㄴGlobal Database Name
+                    ㄴnaver.com 도메인명을 사용하면 중복에 안 걸림 ex)데이터베스이명.도메인명
+                    ㄴxe(xe버전은 xe고정)
+                    ㄴ오라클 데이터베이스를 식별하기 위한 고유한 이름
+                5)SID(System Identifier 시스템식별자)
+                    ㄴ오라클 인스턴스를 식별하기 위한 고유한 이름
+                    ㄴ xe
+                    
+                    참고) "데이터베이스명" = SID
+                            xe = xe
+                            
+오라클 서버 + 연결해서 데이터를 효율적으로 관리하는 도구 
+    ㄴ sql plus(툴) 오라클 설치하면 자동 설치
+    ㄴ sql developer 툴  
+    ㄴ 토드 (Toad) - 가장 널리 사용되는 툴
+    
+    7.tnsnames.ora 파일
+        ㄴ .ora (.oracle 설정파일)
+        ㄴ 컴퓨터와 오라클 데이터베이스 연결설정 정보가 저장 : tnsnames.ora 파일
+    8. 데이터(data)를 효율적으로 관리하는 시스템(DBMS)
+        ㄴ물리적 데이터 저장 ( .dbf 또는 .ora ) => 백업하면 향후 사용 가능
+        ㄴC:\oraclexe\app\oracle\oradata\XE
+            1)System.DBF - SYS, SYSTEM DBA가 소유한 객체
+            2)Temp - 임시 저장소,SQL 문장이 실행될 때 정렬 작업을 위해 마련된 공간.
+            3)UNDOTBS1 -  UNDO 취소 (되돌리기) 롤백(Rollback)위한 저장소
+            4)Users ... - 일반 사용자들의 저장소
+            
+            프로젝트 진행시 - 테이블스페이스 생성, 예) TEAMX -> TEAMX.DBF  => 백업만하면 공유가능. 복원
+            
+            
+    9. 논리적 개념 : 테이블스페이스 (tablespace) > segment의 집합 > 익스텐드의 집합 > data block 의집합 으로 이루어짐.(오른쪽이 가장 작은 단위)
+        
+        Wrokspace 
+             ㄴ JavaClass
+                ㄴ Javapro
+                    ㄴsrc
+            ㄴ  OracleClass
+                    ㄴ       

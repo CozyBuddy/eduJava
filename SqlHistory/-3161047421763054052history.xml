@@ -1,0 +1,15 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[--create table newcustomer(custid number primary key, name varchar2(40),address varchar2(40),phone varchar(30));
+--create table neworders(orderid number primary key, custid number not null ,bookid number not null ,saleprice number,orderdate date, foreign key (custid) references newcustomer(custid) on delete cascade);
+--alter table newbook add isbn varchar2(13);
+alter table newbook modify isbn number;
+alter table newboook drop column isbn;]]></sql>
+		<connection><![CDATA[MD_madang]]></connection>
+		<timestamp><![CDATA[1707714634639]]></timestamp>
+		<type><![CDATA[Script]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.281]]></execTime>
+	</historyItem>
+</history>

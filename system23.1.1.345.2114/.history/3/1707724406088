@@ -1,0 +1,11 @@
+create table newbook(bookid number,bookname varchar2(20),publisher varchar2(20),price number);
+--where customer.custid=orders.custid and orders.bookid=book.bookid and saleprice=20000
+--group by customer.name
+--order by customer.name;
+--where saleprice>=8000
+--group by custid
+--having count(*)>=2;
+
+--//order by custid;
+--//group by custid;
+--//order by price desc,bookname asc;

@@ -1,0 +1,42 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[--create table newcustomer(custid number primary key, name varchar2(40),address varchar2(40),phone varchar(30));
+--create table neworders(orderid number primary key, custid number not null ,bookid number not null ,saleprice number,orderdate date, foreign key (custid) references newcustomer(custid) on delete cascade);
+--alter table newbook add isbn varchar2(13);
+--alter table newbook modify isbn number;
+--alter table newbook modify bookname null;
+--drop table newcustomer;
+--insert into book(bookid , bookname ,publisher)
+--values (14,'스포츠 의학','한솔의학서적');
+--insert into book(bookid,bookname,publisher,price)
+--select bookid,bookname,publisher,price
+--from imported_book;
+--select *
+--from book;
+
+--update customer
+--set address = '대한민국 부산'
+--where custid=5;
+--select *
+--from customer;
+
+--update customer
+--set address = (select address from customer where name='김연아')
+--where name='박세리';
+--delete from customer
+--where custid=5;
+--commit;
+--rollback;
+--select *
+--from customer;
+select ltrim('<==>browning<==>','<==>')
+from dual;
+--group by custid;]]></sql>
+		<connection><![CDATA[MD_madang]]></connection>
+		<timestamp><![CDATA[1707719435245]]></timestamp>
+		<type><![CDATA[Script]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.109]]></execTime>
+	</historyItem>
+</history>
