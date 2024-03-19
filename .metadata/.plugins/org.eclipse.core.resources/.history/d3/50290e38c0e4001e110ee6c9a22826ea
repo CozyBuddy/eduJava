@@ -1,0 +1,18 @@
+package days01;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+public class Viewvo {
+	int num;
+	String a;
+	String b;
+	String date;
+	int pay;
+	String grade;
+
+}

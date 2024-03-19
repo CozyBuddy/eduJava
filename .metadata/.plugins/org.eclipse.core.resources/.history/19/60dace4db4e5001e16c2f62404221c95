@@ -1,0 +1,79 @@
+package persistence;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Date;
+
+import domain.EMPVO;
+import domain.Viewvo;
+
+public class EmpDAOImpl implements EmpDAO{
+	private Connection conn = null ;
+	private PreparedStatement pstmt = null ;
+	private ResultSet rs = null ;
+	//생성자를 통한 DI
+	public EmpDAOImpl(Connection conn) {
+		this.conn = conn;
+	}
+	//2. Setter를 통한 DI
+		public void setConn(Connection conn) {
+			this.conn = conn;
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	public ArrayList<Viewvo> getEmpS() {
+		ArrayList<EMPVO> al = null;
+		
+		int empno;
+        String ename;
+        String job;
+        int mgr;
+        Date hiredate;
+        int sal;
+        int comm;
+        int deptno;
+        String sql = "select * from emp";
+        //PreparedStatement pst = null ;
+        try {
+//           st = conn.createStatement();
+            pstmt = conn.prepareStatement(sql);
+            rs = pstmt.executeQuery();
+//           rs = st.executeQuery(sql);
+            if (rs.next()) {
+            	al = new ArrayList<EMPVO>();
+            	do {
+            		 empno = rs.getInt(1);
+                     ename = rs.getString(2);
+                     job = rs.getString(3);
+                     mgr = rs.getInt(4);
+                     hiredate = rs.getDate(5);
+                     sal = rs.getInt(6);
+                     comm = rs.getInt(7);
+                     deptno = rs.getInt(8);
+                     EMPVO ev = new EMPVO(empno,ename,job,mgr,hiredate,sal,comm,deptno);
+                     al.add(ev);
+				} while (rs.next());
+            }
+           
+           정보출력(al);
+           
+           
+        } catch (SQLException e) {
+           // TODO Auto-generated catch block
+           e.printStackTrace();
+        } catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+}

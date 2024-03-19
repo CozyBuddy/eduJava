@@ -1,0 +1,18 @@
+package test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import persistence.EmpDAO;
+import persistence.EmpDAOImpl;
+
+class EmpDAOImplTest {
+
+	@Test
+	void test() {
+		EmpDAO dao = new EmpDAOImpl(conn);
+		//fail("Not yet implemented");
+	}
+
+}

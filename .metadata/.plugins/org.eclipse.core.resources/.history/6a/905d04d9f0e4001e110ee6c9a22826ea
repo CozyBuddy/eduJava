@@ -1,0 +1,14 @@
+package days02;
+
+import java.text.MessageFormat;
+
+public class EX02_02 {
+	public static void main(String[] args) {
+		//형식화 클래스 : MessageFormat
+		Object objs [] = {50,"영업부","서울"};
+		String pattern = "insert into dept values ({0},'{1}','{2}')";
+		String mf = MessageFormat.format(pattern, objs);
+		System.out.println(sql);
+	}
+
+}

@@ -1,0 +1,14 @@
+package persistence;
+
+import java.sql.ResultSet;
+import java.util.ArrayList;
+
+import domain.EMPVO;
+import domain.Viewvo;
+
+public interface EmpDAO { //DAO 는 입력받지 않음.
+		//1. 사원정보 조회 추상메서드
+		public abstract ArrayList<EMPVO> getEmpS();
+		//2. 사원정보 추가 추상메서드
+		public abstract ArrayList<EMPVO> getEmp
+}

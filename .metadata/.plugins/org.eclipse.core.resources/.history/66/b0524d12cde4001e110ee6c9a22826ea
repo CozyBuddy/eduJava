@@ -1,0 +1,23 @@
+package com.util;
+
+import java.sql.Connection;
+
+//싱글톤 ( Singleton)
+public class DBConn {
+	
+	private static Connection conn = null ;
+	
+	private DBConn() {}
+	
+	private static Connection getConnection() {
+		if (conn == null) {
+			String id = "scott";
+			String pw = "tiger";
+			
+			String dr = "oracle.jdbc.driver.OracleDriver";
+			String jdbcurl = "jdbc:oracle:thin:@localhost:1521:xe";
+		}
+		return conn;
+	}
+
+}

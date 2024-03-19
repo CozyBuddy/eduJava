@@ -1,0 +1,89 @@
+package days01;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Iterator;
+
+
+
+
+
+public class Review {
+	public static void main(String[] args)  {
+		Connection conn = null ;
+		ResultSet rs = null ;
+		Statement st = null ;
+		String id = "scott";
+		String pw = "tiger";
+		
+		String dr = "oracle.jdbc.driver.OracleDriver";
+		String jdbcurl = "jdbc:oracle:thin:@localhost:1521:xe";
+		int num ;
+		String name ;
+		String name2 ;
+		String d1;
+		int pay;
+		String grade;
+		try {
+			Class.forName(dr);
+			conn = DriverManager.getConnection(jdbcurl,id,pw);
+			st = conn.createStatement();
+			String sql = "select e.empno,d.dname,e.ename,e.hiredate,e.sal+nvl(comm,0) as pay ,s.grade from emp e,dept d,salgrade s where e.deptno=d.deptno and s.losal <= e.sal and s.hisal >=e.sal ";
+			rs = st.executeQuery(sql);
+			
+			ArrayList<Viewvo> al = new ArrayList<Viewvo>();
+			
+			
+			while (rs.next()) {
+				num = rs.getInt("empno");
+				name = rs.getString("dname");
+				name2 = rs.getString("ename");
+				d1 = rs.getString("hiredate");
+				pay = rs.getInt("pay");
+				grade = rs.getString("s.grade");
+				Viewvo vo = new Viewvo(num, name2, jdbcurl, sql, pay, grade);
+				al.add(vo);
+				
+				
+			}
+			dispemplist(al);
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				rs.close();
+				st.close();
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+		}
+		
+	}
+
+	private static void dispemplist(ArrayList<Viewvo> al) {
+		Iterator<Viewvo> ir = al.iterator();
+		while (ir.hasNext()) {
+			Viewvo vo = ir.next();
+			System.out.println(vo.toString());
+		}
+		
+	}
+
+	
+		
+	}
+
+	
+
+

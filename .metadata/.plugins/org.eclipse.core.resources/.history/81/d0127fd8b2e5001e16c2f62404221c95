@@ -1,0 +1,12 @@
+package persistence;
+
+import java.sql.ResultSet;
+import java.util.ArrayList;
+
+import days02.EMPVO;
+import domain.Viewvo;
+
+public interface EmpDAO {
+		//1. 사원정보 조회 추상메서드
+		public abstract ArrayList<Viewvo> getEmpS();
+}

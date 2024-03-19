@@ -1,0 +1,19 @@
+package com.util;
+
+import java.sql.Connection;
+
+//싱글톤 ( Singleton)
+public class DBConn {
+	
+	private static Connection conn = null ;
+	
+	private DBConn() {}
+	
+	private static Connection getConnection() {
+		if (conn == null) {
+			
+		}
+		return conn;
+	}
+
+}

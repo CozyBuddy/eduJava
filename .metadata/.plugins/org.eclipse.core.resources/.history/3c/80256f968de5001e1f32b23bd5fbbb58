@@ -1,0 +1,8 @@
+package days03;
+
+public class Ex01 {
+	public static void main(String[] args) {
+		//부서 추가,수정,삭제,검색,조회
+	}
+
+}

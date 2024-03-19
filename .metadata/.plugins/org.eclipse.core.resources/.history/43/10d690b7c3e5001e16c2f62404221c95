@@ -1,0 +1,11 @@
+package days03;
+
+public class Ex03 {
+	public static void main(String[] args) {
+     String sql ="select s.grade||'등급' \"등급\" ,s.losal||'~'||s.hisal \"범위\" ,count(*)||'명' "
+     		+ "\"사람수\" from salgrade s right join emp e on  s.losal<= e.sal and s.hisal>=e.sal "
+     		+ "group by s.grade ,s.losal||'~'||s.hisal order by s.grade";
+		
+	}
+
+}

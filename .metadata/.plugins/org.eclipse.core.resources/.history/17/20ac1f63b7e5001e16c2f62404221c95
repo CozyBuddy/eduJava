@@ -1,0 +1,29 @@
+package test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.sql.Connection;
+import java.util.ArrayList;
+
+import org.junit.jupiter.api.Test;
+
+import com.util.DBConn;
+
+import domain.EMPVO;
+import persistence.EmpDAO;
+import persistence.EmpDAOImpl;
+
+class EmpDAOImplTest {
+
+	@Test
+	void test() {
+		Connection conn = DBConn.getConnection();
+		EmpDAO dao = new EmpDAOImpl(conn);
+		//fail("Not yet implemented");
+		ArrayList<EMPVO> al = dao.getEmpS();
+		//출력확인
+		System.out.println("사원수 : "+al.size());
+		DBConn.close();
+	}
+
+}

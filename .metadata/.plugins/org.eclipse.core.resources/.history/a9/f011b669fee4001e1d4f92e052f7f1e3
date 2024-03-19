@@ -1,0 +1,13 @@
+package days02;
+
+public class EMPVO {
+	int empno;
+	String ename;
+	String job;
+	int mgr;
+	String hire;
+	int sal;
+	int comm;
+	
+
+}

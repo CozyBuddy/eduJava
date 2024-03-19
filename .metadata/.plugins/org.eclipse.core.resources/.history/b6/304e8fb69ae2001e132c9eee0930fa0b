@@ -1,0 +1,56 @@
+package days01;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import oracle.jdbc.driver.OracleDriver;
+import oracle.jdbc.pool.OracleDataSource;
+
+/**
+ * @author user
+ * @date 2024. 3. 15. 오후 3:45:00
+ * @subject
+ * @contents [내일 복습 문제 ] 
+ * 		 scott 접속 + dept 테이블 select 
+ */
+public class Ex03 {
+	public static void main(String[] args) {
+		Connection conn = null ;
+		
+		String dr = "oracle.jdbc.driver.OracleDriver";
+		String id = "scott";
+		String pw = "tiger";
+		String jdbcurl = "jdbc:oracle:thin@localhost:1521:xe";
+		
+		try {
+			Class.forName(dr);
+			try {
+				conn = DriverManager.getConnection(jdbcurl,id,pw);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			if (conn != null) {
+				System.out.println("커넥션 연결 성공");
+			}
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+	
+		
+		
+	}
+
+}

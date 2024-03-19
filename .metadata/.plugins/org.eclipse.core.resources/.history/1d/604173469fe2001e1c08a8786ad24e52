@@ -1,0 +1,8 @@
+package domain;
+
+public class DeptVO { //valueObject
+	public static void main(String[] args) {
+		
+	}
+
+}

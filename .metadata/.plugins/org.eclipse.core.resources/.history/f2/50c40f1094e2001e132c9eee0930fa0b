@@ -1,0 +1,44 @@
+package days01;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import oracle.jdbc.driver.OracleDriver;
+
+/**
+ * @author user
+ * @date 2024. 3. 15. 오후 2:49:52
+ * @subject
+ * @contents
+ */
+public class Ex02 {
+	public static void main(String[] args) {
+		// EX02.java <--> localhost 에 있는 오라클 서버에 연결 
+		// 1. Class.forName() JDBC 드라이버 로딩
+		Connection conn = null ;
+		
+		try {
+			// 드라이버 객체 로딩
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			
+			//  커넥션 연결 
+			String jdbcUrl = "jdbc:h2:tcp://localhost/~/test";
+			conn = DriverManager.getConnection(jdbcUrl,"sa","");
+			
+			if (conn != null) {
+				System.out.println("H2 연결 성공 :"+ conn.toString());
+			}
+		} catch (ClassNotFoundException e) {
+			System.out.println("오라클 드라이버 없음");
+			e.printStackTrace();
+		}  // OracleDriver가 
+		System.out.println("end");
+		// 2. Connection 객체 생성 - DriverMAnager.getConnection
+		// 3.필요한 작업( CRUD)
+		// 4. Connection 닫기(Close)
+		
+		
+		
+	}
+
+}

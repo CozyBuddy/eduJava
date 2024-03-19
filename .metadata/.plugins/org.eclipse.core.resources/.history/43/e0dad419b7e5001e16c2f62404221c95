@@ -1,0 +1,23 @@
+package test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.sql.Connection;
+
+import org.junit.jupiter.api.Test;
+
+import com.util.DBConn;
+
+import persistence.EmpDAO;
+import persistence.EmpDAOImpl;
+
+class EmpDAOImplTest {
+
+	@Test
+	void test() {
+		Connection conn = DBConn.getConnection();
+		EmpDAO dao = new EmpDAOImpl(conn);
+		//fail("Not yet implemented");
+	}
+
+}

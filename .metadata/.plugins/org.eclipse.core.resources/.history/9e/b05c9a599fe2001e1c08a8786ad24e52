@@ -1,0 +1,11 @@
+package domain;
+@Getter
+public class DeptVO { //valueObject
+	public static void main(String[] args) {
+		private int deptno;
+		private String dname;
+		private String loc;
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package persistence;
+
+import java.util.ArrayList;
+
+import domain.Viewvo;
+
+public class EmpDAOImpl implements EmpDAO{
+
+	@Override
+	public ArrayList<Viewvo> getEmpS() {
+		
+		return null;
+	}
+
+}

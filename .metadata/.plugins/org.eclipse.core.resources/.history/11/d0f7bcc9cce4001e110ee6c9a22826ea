@@ -1,0 +1,7 @@
+package com.util;
+
+//싱글톤 ( Singleton)
+public class DBConn {
+	private DBConn() {}
+
+}
