@@ -1,0 +1,19 @@
+package days05.board.domain;
+
+public class BoardDTO {
+	public static void main(String[] args) {
+		private long seq; 
+		private String writer;
+		Private String pwd;
+		private String email;
+		private String title;
+		Date writedate;
+		PWD       NOT NULL VARCHAR2(20)  
+		EMAIL              VARCHAR2(100) 
+		TITLE     NOT NULL VARCHAR2(200) 
+		WRITEDATE          DATE          
+		READED             NUMBER        
+		TAG       NOT NULL NUMBER(1)     
+		CONTENT            CLOB  
+	}
+}

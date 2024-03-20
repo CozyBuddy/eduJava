@@ -1,0 +1,5 @@
+package days05.board.persistence;
+
+public interface BoardDAO {
+
+}

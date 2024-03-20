@@ -1,0 +1,14 @@
+package days04;
+
+/**
+ * @author user
+ * @date 2024. 3. 20. 오후 2:01:10
+ * @subject	dept - select 부서조회
+ * @contents up_selectdept
+ */
+public class Ex05 {
+	public static void main(String[] args) {
+		
+	}
+
+}

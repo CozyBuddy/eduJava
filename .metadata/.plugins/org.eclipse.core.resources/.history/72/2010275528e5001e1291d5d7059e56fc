@@ -1,0 +1,15 @@
+package days01;
+
+import java.sql.Connection;
+
+import oracle.jdbc.driver.OracleDriver;
+
+public class DBConn {
+	public static Connection conn;
+	static Connection getConnection() {
+		
+		String dr = "oracle.jdbc.driver.OracleDriver";
+		Class.forName(null)
+	}
+
+}

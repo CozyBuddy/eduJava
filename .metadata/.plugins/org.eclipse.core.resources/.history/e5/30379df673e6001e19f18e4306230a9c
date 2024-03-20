@@ -1,0 +1,39 @@
+package days04;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+import com.util.DBConn;
+
+public class Ex04_02 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("변경할 부서번호를 입력하세요.");
+		int a = sc.nextInt();
+		System.out.print("변경할 부서명을 입력하세요.");
+		String b = sc.next();
+		System.out.println("변경할 지역명을 입력하세요.");
+		String c = sc.next();
+		String sql = "{call up_update (? ,?, ?, ?)}";
+		Connection conn = null;
+		CallableStatement cs = null;
+		int check = 0;
+		conn = DBConn.getConnection();
+		
+		try {
+			cs = conn.prepareCall(sql);
+			cs.setInt(1, a);
+			cs.setString(2, b);
+			cs.setString(3, c);
+			
+			 cs.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

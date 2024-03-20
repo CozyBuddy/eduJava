@@ -1,0 +1,32 @@
+package days03;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+
+import com.util.DBConn;
+
+import domain.DeptEmpSalVo;
+import domain.SalgradeVO;
+
+public class Review {
+	public static void main(String[] args) {
+		String sql ="select s.grade ,s.losal,s.hisal ,count(*) cnt from salgrade s join emp e on  s.losal<= e.sal and s.hisal>=e.sal group by s.grade ,s.losal,s.hisal order by s.grade" ;
+		String sqlemp = "select d.deptno,dname,empno,ename,sal from dept d right join emp e on d.deptno = e.deptno join salgrade s on sal between losal and hisal where  grade = ? "; 
+		
+		Connection conn = null ;
+		PreparedStatement pst = null;
+		SalgradeVO vo = null ;
+		DeptEmpSalVo des = null ;
+		ArrayList<DeptEmpSalVo> al = null ;
+		ResultSet rs = null;
+		ResultSet rs2 = null;
+		LinkedHashMap<SalgradeVO, ArrayList<DeptEmpSalVo>>  lhm= null;
+		DBConn.getConnection();
+		
+		
+	}
+
+}

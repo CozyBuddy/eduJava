@@ -1,0 +1,31 @@
+package days05;
+
+/**
+ * @author user
+ * @date 2024. 3. 20. 오후 4:03:54
+ * @subject
+ * @contents
+ */
+public class Ex01 {
+	public static void main(String[] args) {
+		// [1] 게시판 패키지 선언
+		// days05
+		//		ㄴ board
+		//			ㄴ domain
+		//			ㄴ persistence
+		//			ㄴ service
+		//			ㄴ controller
+		/*create table cstVSBoard (
+				  seq int identity (1, 1) not null primary key clustered,
+				  writer varchar (20) not null ,
+				  pwd varchar (20) not null ,
+				  email varchar (100) null ,
+				  title varchar (200) not null ,
+				  writedate smalldatetime not null default (getdate()),
+				  readed int not null default (0),
+				  mode tinyint not null ,
+				  content text null
+				)*/
+	}
+
+}

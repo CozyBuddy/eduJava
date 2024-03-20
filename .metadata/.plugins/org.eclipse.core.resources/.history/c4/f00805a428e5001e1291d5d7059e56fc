@@ -1,0 +1,25 @@
+package days01;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import oracle.jdbc.driver.OracleDriver;
+
+public class DBConn {
+	public static Connection conn;
+	static Connection getConnection() {
+		
+		String dr = "oracle.jdbc.driver.OracleDriver";
+		String url = "jdbc:oracle:thin:@localhost:1521:xe";
+		String id = "scott";
+		String pw = "tiger";
+		try {
+			Class.forName(dr);
+			conn = DriverManager.getConnection(url,id,pw);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

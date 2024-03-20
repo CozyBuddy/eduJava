@@ -1,0 +1,19 @@
+package domain;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@ToString
+public class EmpcVO {
+	int deptno;
+	int empno;
+	String ename;
+	String hiredate;
+	int sal ;
+
+}

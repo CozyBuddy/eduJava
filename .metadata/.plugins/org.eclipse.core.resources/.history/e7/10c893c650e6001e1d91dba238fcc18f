@@ -1,0 +1,15 @@
+package domain;
+
+import lombok.AllArgsConstructor;
+
+@Getter
+@Setter
+@AllArgsConstructor
+public class EmpcVO {
+	int deptno;
+	int empno;
+	String ename;
+	String hiredate;
+	int sal ;
+
+}

@@ -31,9 +31,7 @@ public class DBConn {
 				e.printStackTrace();
 			} 
 				
-				
 			
-		
 		
 		}
 		return conn;

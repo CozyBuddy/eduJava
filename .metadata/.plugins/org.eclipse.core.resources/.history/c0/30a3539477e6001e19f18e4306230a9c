@@ -1,0 +1,28 @@
+package days04;
+
+/**
+ * @author user
+ * @date 2024. 3. 20. 오후 2:01:10
+ * @subject	dept - select 부서조회
+ * @contents up_selectdept
+ */
+public class Ex05 {
+	public static void main(String[] args) {
+		
+		String sql = "{call up_selectdept( ?)}";
+	}
+
+}
+/*
+ * create or replace procedure up_selectdept
+(
+   pdeptcursor out sys_refcursor
+)
+is
+
+begin
+    --OPEN커서 for문
+   open pdeptcursor for  select * from dept;
+    
+end;
+ */

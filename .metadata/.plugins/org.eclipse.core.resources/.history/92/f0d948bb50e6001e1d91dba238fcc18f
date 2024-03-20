@@ -1,0 +1,59 @@
+package days03;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+
+import com.util.DBConn;
+
+import domain.DeptcVO;
+import domain.EmpcVO;
+
+public class Review {
+	public static void main(String[] args) {
+		String sql = "select d.deptno , count(*) from dept d right join emp e on e.deptno = d.deptno group by d.deptno";
+		String esql = "select d.deptno ,empno,ename,hiredate, sal from emp e ,dept d where e.deptno = ? ";
+		
+		PreparedStatement pst = null;
+		PreparedStatement pst2 = null;
+		ResultSet rs = null;
+		ResultSet rs2 = null;
+		Connection conn = null ;
+		ArrayList<EmpcVO> al = null;
+		LinkedHashMap<DeptcVO, ArrayList<EmpcVO>> lhm = new LinkedHashMap<DeptcVO, ArrayList<EmpcVO>>();
+		EmpcVO ev = null;
+		DeptcVO dv= null;
+		
+		conn = DBConn.getConnection();
+		try {
+			
+				pst = conn.prepareStatement(sql);
+				rs = pst.executeQuery();
+			if (rs.next()) {
+				do {
+				 int deptno =rs.getInt("deptno");
+				 dv = new DeptcVO(deptno, rs.getInt("count(*)"));
+				 pst2 = conn.prepareStatement(esql);
+				 pst2.setInt(1, deptno );
+				 rs2 = pst.executeQuery();
+				 
+					
+		
+				
+				
+				
+				
+			} while (rs.next());
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

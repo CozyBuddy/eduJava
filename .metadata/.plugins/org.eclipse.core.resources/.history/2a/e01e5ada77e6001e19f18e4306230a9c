@@ -1,0 +1,63 @@
+package days04;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import com.util.DBConn;
+
+import oracle.jdbc.OracleTypes;
+
+/**
+ * @author user
+ * @date 2024. 3. 20. 오후 2:01:10
+ * @subject	dept - select 부서조회
+ * @contents up_selectdept
+ */
+public class Ex05 {
+	public static void main(String[] args) {
+		
+		String sql = "{call up_selectdept(?)}";
+		Connection conn = null;
+		CallableStatement cs = null;
+		int check = 0;
+		conn = DBConn.getConnection();
+		try {
+			cs = conn.prepareCall(sql);
+			cs.setInt(1, id);
+			cs.setString(2, pw);
+			cs.registerOutParameter(3, OracleTypes.INTEGER);
+			cs.executeQuery();
+			check = cs.getInt(3);
+			if (check==0) {
+				System.out.println("비밀번호가 다릅니다.");
+			} else if (check ==1) {
+				System.out.println("로그인에 성공하였습니다.");
+			}  else {
+				System.out.println("맞는 회원정보가 없습니다.");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			
+			DBConn.close();
+		}
+		
+	}
+	
+
+}
+/*
+ * create or replace procedure up_selectdept
+(
+   pdeptcursor out sys_refcursor
+)
+is
+
+begin
+    --OPEN커서 for문
+   open pdeptcursor for  select * from dept;
+    
+end;
+ */

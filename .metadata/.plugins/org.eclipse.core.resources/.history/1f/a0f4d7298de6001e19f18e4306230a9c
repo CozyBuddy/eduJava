@@ -1,0 +1,16 @@
+package days05.board.persistence;
+
+import java.util.ArrayList;
+
+import days05.board.domain.BoardDTO;
+import domain.EMPVO;
+
+public interface BoardDAO {
+	
+		
+	// 1.게시글 목록 조회 + 페이징 처리 X 
+	public abstract ArrayList<BoardDTO> Sboard();
+	// 2.게시글 쓰기
+	
+	
+}

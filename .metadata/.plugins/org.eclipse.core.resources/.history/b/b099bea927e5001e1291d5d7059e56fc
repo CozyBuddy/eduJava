@@ -1,0 +1,5 @@
+package days01;
+
+public class Ex01 {
+
+}

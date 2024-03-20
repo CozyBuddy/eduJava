@@ -1,0 +1,20 @@
+package days05;
+
+/**
+ * @author user
+ * @date 2024. 3. 20. 오후 4:03:54
+ * @subject
+ * @contents
+ */
+public class Ex01 {
+	public static void main(String[] args) {
+		// [1] 게시판 패키지 선언
+		// days05
+		//		ㄴ board
+		//			ㄴ domain
+		//			ㄴ persistence
+		//			ㄴ service
+		//			ㄴ controller
+	}
+
+}

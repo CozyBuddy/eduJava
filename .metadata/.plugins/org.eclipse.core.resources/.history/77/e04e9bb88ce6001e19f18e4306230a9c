@@ -1,0 +1,8 @@
+package days05.board.persistence;
+
+public interface BoardDAO {
+	
+		
+	//1.게시글 목록 조회 + 페이징 처리 X 
+	
+}

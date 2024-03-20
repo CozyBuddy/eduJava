@@ -20,12 +20,10 @@ import domain.SalgradeVO;
 
 public class Ex03_02 {
 	public static void main(String[] args) {
-     String sql ="select s.grade ,s.losal,s.hisal ,count(*) "+"cnt"
-     		+ " from salgrade s right join emp e on  s.losal<= e.sal and s.hisal>=e.sal "
-     		+ "group by s.grade ,s.losal,s.hisal order by s.grade";
-	String empsql = "select d.deptno,dname,empno,ename,sal from dept d right join emp e on"
+     String sql ="select s.grade ,s.losal,s.hisal ,count(*) cnt from salgrade s join emp e on  s.losal<= e.sal and s.hisal>=e.sal group by s.grade ,s.losal,s.hisal order by s.grade" ;
+	String empsql = "select d.deptno,dname,empno,ename,sal,hiredate from dept d right join emp e on "
 				+ " d.deptno = e.deptno join salgrade s on sal between losal and hisal where "
-				+ "grade =1";
+				+ " grade =? ";
      Connection conn = null ;
      PreparedStatement pst = null ,empPst=null;
      ResultSet rs = null ,empRs = null ;
@@ -52,7 +50,7 @@ public class Ex03_02 {
 					do {
 						// d.deptno,dname,empno,ename,sal
 						empvo = new DeptEmpSalVo(empRs.getInt("empno"), empRs.getString("dname"), empRs.getString("ename"), empRs.getInt("sal"), empRs.getDate("hiredate"),empRs.getInt("deptno"));
-					
+						emplist.add(empvo);
 					} while (empRs.next());
 					
 				}
@@ -86,9 +84,33 @@ public class Ex03_02 {
      // 4.
 	}
 
-	private static void DispSalgrade(LinkedHashMap<SalgradeVO, ArrayList<DeptEmpSalVo>> map) {
+	private static void DispSalgrade(
+			LinkedHashMap<SalgradeVO, ArrayList<DeptEmpSalVo>> map) {
 		Set<Entry<SalgradeVO, ArrayList<DeptEmpSalVo>>> set = map.entrySet();
-		
+		Iterator<Entry<SalgradeVO, ArrayList<DeptEmpSalVo>>> ir = set.iterator();
+		while (ir.hasNext()) {
+			Entry<SalgradeVO, ArrayList<DeptEmpSalVo>> entry = 
+					   ir.next();
+			SalgradeVO vo =  entry.getKey();
+			ArrayList<DeptEmpSalVo> list = entry.getValue();
+			// 출력
+			System.out.printf("%d등급	( %d~%d ) - %d명\n"
+					, vo.getGrade()
+					, vo.getLosal()
+					, vo.getHisal()
+					, vo.getCnt());
+			// 사원 출력
+			Iterator<DeptEmpSalVo> ir2 = list.iterator();
+			while (ir2.hasNext()) {
+				DeptEmpSalVo empvo = ir2.next();
+				System.out.printf(
+						"\t\t%s\t%d\t%s\t%.2f\n"
+						, empvo.getDname()
+						, empvo.getEmpno()
+						, empvo.getEname()
+						, empvo.getSal());
+			}
+		} // while
 	}
 
 	private static void DispSalgrade(ArrayList<SalgradeVO> list) {

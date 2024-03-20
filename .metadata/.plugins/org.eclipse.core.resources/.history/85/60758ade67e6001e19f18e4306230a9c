@@ -1,0 +1,16 @@
+package days04;
+
+public class Ex04 {
+	public static void main(String[] args) {
+		//로그인 
+		// 아이디 : [hong] empno
+		// 비밀번호 : [1234] ename
+		// <로그인 버튼> <회원가입 버튼> 
+		
+		//로그인 실패 , 성공 여부 출력
+		
+		//up_login 저장 프로시저
+		
+	}
+
+}

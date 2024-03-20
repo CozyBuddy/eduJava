@@ -1,0 +1,55 @@
+package com.util;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+
+public class DBConn {
+	public static Connection conn;
+	static Connection getConn() {
+		
+		String dr = "oracle.jdbc.driver.OracleDriver";
+		String url = "jdbc:oracle:thin:@localhost:1521:xe";
+		String id = "scott";
+		String pw = "tiger";
+		try {
+			Class.forName(dr);
+			conn = DriverManager.getConnection(url,id,pw);
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println("드라이버 로딩 실패");
+			e.printStackTrace();
+			
+		}
+		return conn;
+		
+		
+	
+}
+      static void getConn(String id,String pw) {
+		
+		String dr = "oracle.jdbc.driver.OracleDriver";
+		String url = "jdbc:oracle:thin:@localhost:1521:xe";
+		try {
+			Class.forName(dr);
+			conn = DriverManager.getConnection(url,id,pw);
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println("드라이버 로딩 실패");
+			e.printStackTrace();
+			
+		}
+		
+		
+	}
+      static void close() throws SQLException {
+    	  if (conn!=null && !conn.isClosed()) {
+			conn.close();
+		}
+      }
+}
+
+
