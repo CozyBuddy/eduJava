@@ -1,5 +1,0 @@
-package days05.board.persistence;
-
-public class BoardDAOImpl {
-
-}

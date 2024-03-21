@@ -14,6 +14,19 @@ public interface BoardDAO {
 	// 2.게시글 쓰기
 	int Iboard (BoardDTO dto) throws SQLException;
 	
+	//3. 게시글 상세보기 - 조회수 증가
+	int increasereaded(long seq) throws SQLException ; 
+	//3-2. 상세 보기 
+	BoardDTO view(long seq) throws SQLException ; 
+	//4. 게시글 삭제
+	int delete(long seq) throws SQLException;
+	//5 .게시글 수정
+	//int update(long seq,String title, String content, String email) throws SQLException;
+	int update(BoardDTO dto) throws SQLException;
+	
+	// 6. 게시글 검색
+	public abstract ArrayList<BoardDTO> Search(int searchCondition, String searchWord) throws SQLException;
+	
 	
 	
 }

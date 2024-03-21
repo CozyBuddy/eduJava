@@ -1,0 +1,18 @@
+package test.board;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import days05.board.domain.BoardDTO;
+import days05.board.persistence.BoardDAOImpl;
+
+class BoardDAOImplTest {
+
+	@Test
+	void testinsert() {
+		BoardDTO dto = BoardDTO bd = BoardDTO.builder().seq(seq).title(title).writer(writer).email(email).writedate(writedate).readed(readed).build();
+		
+	}
+
+}
