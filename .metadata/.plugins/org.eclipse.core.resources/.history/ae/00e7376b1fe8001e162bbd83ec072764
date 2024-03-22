@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+	1.웹 동작 원리
+		클라이언트 		     			서버 
+		서비스 받는 쪽 		 	서비스 제공하는 쪽
+		 ---------------요청(request)-----------
+		 ---------------응답(response)-----------
+		
+	 -->
+</body>
+</html>
