@@ -1,0 +1,12 @@
+package days05;
+
+public class Ex03_02 {
+	public static void main(String[] args) {
+		int currentpage = 1;
+		int numberperpage = 10;
+		int numberofpageblock = 10 ;
+		
+		// [1] 2 3 4 5 6 7 8 9 10 > 
+	} //페이징 블럭
+
+}

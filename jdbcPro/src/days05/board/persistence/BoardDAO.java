@@ -11,6 +11,8 @@ public interface BoardDAO {
 		
 	// 1.게시글 목록 조회 + 페이징 처리 X 
 	public abstract ArrayList<BoardDTO> Sboard() throws SQLException;
+	// 1-1 게시글 목록 조회 + 페이징 처리 
+	public abstract ArrayList<BoardDTO> Sboard(int currentpage, int numberperpage) throws SQLException;
 	// 2.게시글 쓰기
 	int Iboard (BoardDTO dto) throws SQLException;
 	
@@ -25,8 +27,17 @@ public interface BoardDAO {
 	int update(BoardDTO dto) throws SQLException;
 	
 	// 6. 게시글 검색
-	public abstract ArrayList<BoardDTO> Search(int searchCondition, String searchWord) throws SQLException;
+	public abstract ArrayList<BoardDTO> Search(int currentpage , int searchCondition, String searchWord) throws SQLException;
+	// 7 . 총 페이지 수 계산
+	int gettotalpages(int numberperpage) throws SQLException;
 	
+	// 8 . 총 게시글 수 계산
+	int gettotalrecords() throws SQLException;
+	
+	// 9 . 총 검색 페이지 수 계산
+	int totalsearchpages (int searchCondition, String searchWord) throws SQLException;
+	
+
 	
 	
 }

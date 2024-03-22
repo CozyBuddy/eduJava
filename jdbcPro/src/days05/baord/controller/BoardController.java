@@ -64,13 +64,16 @@ public class BoardController {
 	}
 
 	private void 검색하기() {
+		int a = 0;
 		System.out.print(
 				"> 검색 조건 : 제목(1) , 내용(2), 작성자(3), 제목+내용(4) ,제목+내용+작성자(5) 선택  ? ");
 				      int searchCondition = this.sc.nextInt();
 				      System.out.print("> 검색어 입력 ? ");
 				      String searchWord = this.sc.next();
-			
-						ArrayList<BoardDTO> al = this.service.searchService(searchCondition,searchWord);
+				      System.out.print("보려고하는 페이지 수를 입력하세요");
+				      int currentpage = sc.nextInt();
+				      
+						ArrayList<BoardDTO> al = this.service.searchService(currentpage,searchCondition,searchWord);
 						// 뷰(View)-출력담당
 					      System.out.println("\t\t\t  게시판");
 					      System.out.println("-------------------------------------------------------------------------");
@@ -83,15 +86,18 @@ public class BoardController {
 							Iterator<BoardDTO> ir = al.iterator();
 						while (ir.hasNext()) {
 							BoardDTO dto =  ir.next();
+							
 							System.out.printf("%d\t%-30s  %s\t%-10s\t%d\n",
 					                  dto.getSeq(), 
 					                  dto.getTitle(),
 					                  dto.getWriter(),
 					                  dto.getWritedate(),
-					                  dto.getReaded());   
+					                  dto.getReaded()); 
+							
 						}
 						System.out.println("-------------------------------------------------------------------------");
-						System.out.println("\t\t\t [1] 2 3 4 5 6 7 8 9 10 >"); 
+						String pageblock = service.searchc(currentpage, searchCondition, searchWord);
+						System.out.println(pageblock);
 						System.out.println("-------------------------------------------------------------------------");
 						}
 						
@@ -175,11 +181,15 @@ public class BoardController {
 		}
 	
 	//페이징 처리 필요한 필드 선언
-	private int currentpage = 1;
+
+	// < 1 2 3 4 5 6  7 8 9 10 >
+	private int numberofpageblock = 10 ;
 	private void 목록보기() {
 		System.out.print("보고싶은 페이지번호를 입력하세요.");
-		this.currentpage = sc.nextInt();
-		ArrayList<BoardDTO> al = this.service.Sselect();
+		int currentpage = sc.nextInt();
+		System.out.println("페이지당 볼 게시글 수를 입력하세요");
+		int numberperpage = sc.nextInt();
+		ArrayList<BoardDTO> al = this.service.Sselect(currentpage,numberperpage);
 		// 뷰(View)-출력담당
 	      System.out.println("\t\t\t  게시판");
 	      System.out.println("-------------------------------------------------------------------------");
@@ -200,7 +210,8 @@ public class BoardController {
 	                  dto.getReaded());   
 		}
 		System.out.println("-------------------------------------------------------------------------");
-		System.out.println("\t\t\t [1] 2 3 4 5 6 7 8 9 10 >"); 
+		String pageblock = service.pageservice(currentpage, numberperpage, numberofpageblock);
+		System.out.println(pageblock);
 		System.out.println("-------------------------------------------------------------------------");
 		}
 		

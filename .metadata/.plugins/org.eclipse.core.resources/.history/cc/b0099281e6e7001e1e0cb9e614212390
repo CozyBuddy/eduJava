@@ -1,0 +1,12 @@
+package days05;
+
+public class Ex03 {
+	public static void main(String[] args) {
+		//int currentpage = 1 ;
+		int numberperpage = 10 ;
+		for (int currentpage = 1; currentpage < 5; currentpage++) {
+			System.out.printf("currentpage = %d \n", currentpage);
+		}
+	}
+
+}
