@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	/*링크 태그에 스타일 지정하는 css 코딩  */
+	a{
+		color : #000;
+		;}
+</style>
+<!-- <link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+ -->	
+ <link rel="shortcut icon" type="image/x-icon" href="https://www.naver.com/favicon.ico?1">
+	
+</head>
+<body>
+	<!-- [ html 링크 ]
+			링크를 클릭하면 다른 문서로 이동 하는 것
+			하이퍼링크
+			링크 위로 마우스를 이동하면 마우스 화살표 - > 작은 손 모양으로 변함
+			링크는 텍스트 , 이미지, 기타 html 요소일 수 있다.
+			a 태그 (링크 태그)
+	  -->
+	  <a href = "https://n.news.naver.com/article/437/0000385440">조국혁신당 기사</a><br>
+	  <a href = "https://v.daum.net/v/20240325144201611">의대 뉴스</a><br>
+	  <a href = "https://daum.net">다음</a><br>
+	  <!-- days02.ex01.html 페이지 링크  -->
+	  <!-- 절대 경로 -->
+	  <a href = "http://localhost/webPro/html/days02/ex01.html">ex02링크</a><br>
+	   <!-- 상대 경로 -->
+	   <!-- 이미 위 경로에서 days02 폴더 안까지 설정되어있음 -->
+	  <a href = "ex01.html">ex02링크</a><br>
+	  <!-- 이미 위 경로에서 days02 폴더 안까지 설정되어있음 -->
+	  <!-- http://localhost/ex01.html   /를 붙이면 localhost에서부터 파일을 찾음 -->
+	  <a href = "/webPro/html/days02/ex01.html">/ex02링크</a><br>
+	  
+	  <a href = "/webPro/html/days01/ex01.html">ex01 days01의 링크</a><br>
+	  <a href = "../days01/ex01.html">ex01 days01의 링크</a><br>
+	  <a href = "./ex01.html">ex01 days02의 링크</a><br>
+	  <a href = "../days01/ex01.html" target = "_blank">days01.ex01.html</a><br>
+	 <!--  1.밑줄 + 보라색 : 방문한 링크
+	  2.밑줄 + 파랑색 : 방문하지 않은 링크
+	  3.밑줄 + 빨간색 : 방문하려고 클릭하는 순간의 링크
+	  a 링크 태그의 target 속성? 링크된 문서를 열 위치를 지정하는 속성
+	  	1) _self 기본값 , 현재 동일한 창(탭)에 문서를 연다.
+	  	2) _blank  새 창(새 탭)을 열어서 문서를 연다.
+	  	3) _parent 상위 프레임의 문서를 연다.
+	  	4) _top	  창 전체에서 문서를 연다.
+	  	
+	  	 -->
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+
+</head>
+<body>
+<h3> 이미지 태그</h3>
+<!-- 
+	image - 웹 페이지의 디자인과 모양을 향상 시킬 수 있다.
+	html 폴더
+		ㄴ images 폴더 추가. 
+	<img alt="이미지를 대체할 텍스트 지정" src="이미지 URI">
+ -->
+ <img alt="이탈리안 튤립" src="../images/pic_trulli.jpg">
+ <hr>
+ 	<!-- width 속성 단위생략 : px -->
+  <img alt="이탈리안 튤립" src="../images/pic_trulli.jpg"  height = "750">
+  <img alt="이탈리안 튤립" src="../images/pic_trulli.jpg"  >
+</body>
+</html>

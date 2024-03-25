@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	html페이지에서 단락을 나누는 태그 
+	<p>
+	int i = 10;
+	System.out.println(i);
+		</p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+ /* 스타일 적용 태그 */
+</style>
+</head>
+<body>
+	<h3>html 제목(hn) - 웹페이지의 표시되는 제목 또는 부제목</h3>
+	
+	h$*6> { h 요소 설명}
+	<h1>h 요소 설명 --heading == 머릿글 텍스트</h1>
+	<h2>h 요소 설명</h2>
+	<h3>h 요소 설명	- [블럭모드]/ 인라인모드</h3>
+	<h4>h 요소 설명</h4>
+	<h5>h 요소 설명</h5>
+	<h6>h 요소 설명</h6>
+</body>
+</html>

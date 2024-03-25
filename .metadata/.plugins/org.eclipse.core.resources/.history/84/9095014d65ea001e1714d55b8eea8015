@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	url 와 URI 차이 
+	
+	1. URL
+	 -네트워크 상에서 자원이 어디 있는 지 를 알려주기 위한 규약
+	 -웹 페이지를 찾기 위한 주소.
+	 -Uniform Resource Locator
+	 예) http://localhost/webpro/html/days02/ex03.html
+	2. URI
+</body>
+</html>

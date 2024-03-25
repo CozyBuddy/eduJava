@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="Generator" content="eclipse IDE">
+  <meta name="Author" content="kenki ">
+  <meta name="Keywords" content="html4, tag, css ">
+  <meta name="Description" content="asdfsadffasdfasdfasdfasdf">
+<title>여기에 제목이 표시됩니다.</title>
+</head>
+<body>
+	<h3>html 기본 구조</h3>
+	<p>1. !는 선언문 !DOCTYPE html</p>
+	<!-- Ctrl +Shift 
+	<!DOCTYPE html> !선언문 : html5 문서임 html문서의 루트(Root) 엘리먼트(Element)
+<html>
+					html문서의 시작~ 끝
+					모든 요소의 부모 요소 (루트엘리먼트 html과  /html 사이에 다 있음)
+<head>			-	html 요소의 자식 요소 	
+					html 문서에 대한 메타 정보가 포함되어있음.
+<meta charset="UTF-8"> 인코딩 정보 포함.
+<title>Insert title here</title>	제목을 지정  / 브라우저의 제목 표시줄 또는 페이지 탭 표시 (생략가능)
+</head>
+<body>  		 -	html 요소의 자식 요소  (필수)
+					화면 표시되는 모든 내용 (콘텐츠)에 대한 컨테이너 역할 ( 담아두는 역할)
+					본문에 내용(제목,단락,이미지,하이퍼링크,표,목록 등등)
+
+</body>
+</html>
+--> <!--
+	html 요소 ? 시작태그 + 내용(콘텐츠) + 종료태그 정의 
+	참고사항) 빈요소 - 내용이 없는 태그도 있고 ,빈요소는 종료태그가 없다.  -->
+	
+	<!-- 공백처리, 줄바꿈(개행) -> html 예약된 문자 사용해야함. -> html entity 대체
+		&entity_name; or &entity_number;	
+		nbsp => non-breaking space
+		 html5 		<br> => 내용이 없으면 이렇게 사용함
+	 			<br></br> => 내용이 없으면 이렇게 사용함
+	 			<br /> => 내용이 없으면 이렇게 사용함
+	 -->
+	
+	<p>sa    df</p>
+	sa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  df<br>
+	&lt;h3&gt;
+	
+	<ul></ul>
+	<p>sa<br><br><br><br><br><br><br><br><br><br>df</p>
+	<p>sad<라라라라라라> </p>
+	<h3> third level heading tag
+	&copy;이시은<br>
+	<p>sadf</p>
+	<h3></h3>
+</body>
+</html>

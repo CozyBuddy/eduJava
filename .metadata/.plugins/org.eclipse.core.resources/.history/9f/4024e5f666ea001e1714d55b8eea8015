@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- url 와 URI 차이 
+	
+	1. URL
+	 -네트워크 상에서 자원이 어디 있는 지 를 알려주기 위한 규약
+	 -웹 페이지를 찾기 위한 주소.
+	 -Uniform Resource Locator
+	 예) http://localhost/webPro/html/days02/ex03.html
+	 통신 규약, 인터넷 서비스 유형을 정의 예) http,https
+	 			도메인 접두사 ( http:// 기본값 www)
+	 					.naver.com
+	 							호스트의 포트번호 ( http:// 기본값 80 )
+	 							서버의 경로
+	 								문서 또는 자원의 이름
+	 scheme://prefix.domain:port/path/filename
+	 예) 네이버 "홍길동" 검색 url
+	 https://search.naver.com[:80]/search.naver
+	 secure 보안	
+	 // 요청 url + 파라미터값 => QueryString
+	 				GET 방식 / POST 방식
+	 ?where=nexearch
+	 & (==파라미터 연결 연산자) 
+	 sm=top_hty
+	 &fbm=0
+	 &ie=utf8
+	 &query=%ED%99%8D%EA%B8%B8%EB%8F%99+%EB%8C%80%EB%AA%85%EC%82%AC
+	 %ED%99%8D%EA%B8%B8%EB%8F%99 == "홍길동" 
+	 => URL은 한글을 사용할 수 없다.
+	     ㄴ 한글문자 -> 변환 		%16진수값을 변환되어서 URL에서 사용
+	     ㄴ 공백, +기호(%20) 		%16진수값으로 변환
+	     
+	 
+											
+	 
+	 2. URI 
+	 
+	 
+	 -->
+</body>
+</html>

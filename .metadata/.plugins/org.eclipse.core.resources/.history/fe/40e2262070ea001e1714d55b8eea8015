@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+	
+	
+</head>
+<body>
+	<!-- [ html 링크 ]
+			링크를 클릭하면 다른 문서로 이동 하는 것
+			하이퍼링크
+			링크 위로 마우스를 이동하면 마우스 화살표 - > 작은 손 모양으로 변함
+			링크는 텍스트 , 이미지, 기타 html 요소일 수 있다.
+			a 태그 (링크 태그)
+	  -->
+	  <a href = "https://n.news.naver.com/article/437/0000385440">조국혁신당 기사</a><br>
+	  <a href = "https://v.daum.net/v/20240325144201611">의대 뉴스</a><br>
+	  <a href = "https://daum.net">다음</a><br>
+	  <!-- days02.ex01.html 페이지 링크  -->
+	  <!-- 절대 경로 -->
+	  <a href = "http://localhost/webPro/html/days02/ex01.html">ex02링크</a><br>
+	   <!-- 상대 경로 -->
+	   <!-- 이미 위 경로에서 days02 폴더 안까지 설정되어있음 -->
+	  <a href = "ex01.html">ex02링크</a><br>
+	  <!-- 이미 위 경로에서 days02 폴더 안까지 설정되어있음 -->
+	  <!-- http://localhost/ex01.html   /를 붙이면 localhost에서부터 파일을 찾음 -->
+	  <a href = "/webPro/html/days02/ex01.html">/ex02링크</a><br>
+	  
+	  <a href = "/webPro/html/days01/ex01.html">ex01 days01의 링크</a>
+	  <a href = "../days01/ex01.html">ex01 days01의 링크</a>
+	  <a href = "./ex01.html">ex01 days02의 링크</a>
+	  
+	  
+</body>
+</html>

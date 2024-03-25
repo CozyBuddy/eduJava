@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	html페이지에서 단락을 나누는 태그 
+	<p>
+	int i = 10;
+	System.out.println(i);
+	</p>
+	<pre> <!-- pre : 미리 서식이 지정된 텍스트, preformatted text,공백, 줄바꿈이 유지됨. ,고정 너비 글꼴 유지 (Courier) -->
+	<h3>고정 너비 글꼴</h3>
+	int i = 10;              사람들이 말하더라 새것마냥 키레이다테 
+	System.out.println(i);
+	</pre>
+	
+	<pre> 
+	<h3>고정 너비 글꼴</h3>
+	int i = 10;              사람들이 말하더라 새것마냥 키레이다테 
+	System.out.println(i);
+	</pre>
+</body>
+</html>

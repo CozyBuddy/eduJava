@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+
+</head>
+<body>
+<pre>
+	[a 링크 태그]
+	- js 처리 : 경고창 띄우기.
+	- js 내장된 브라우저 객체(BOM) : window 객체
+	- js "문자열"
+</pre>
+
+<a href = "javascript: window.alert("'경고창'");">
+	
+</a>
+</body>
+</html>

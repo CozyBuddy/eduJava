@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+
+</head>
+<body>
+	<a href = "../images/pic_trulli.jpg" target = "_blank"> 
+	<img alt="이탈리안 튤립" src="../images/pic_trulli.jpg" sytle=" width = 100px; height = 750px">
+  	
+	</a>
+</body>
+</html>

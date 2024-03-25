@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>
+	html 인용문 - q,blockquote 
+	</h3>
+	
+	<pre>
+	1. q 
+		-짧은 인라인 인용문
+		-인라인 모드
+	</pre>
+	마이클타이슨 어록 
+	 <q>누구나 그럴싸한 계획을 가지고 있다. 쳐 맞기 전까지는</q> 
+</body>
+</html>

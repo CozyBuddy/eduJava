@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- url 와 URI 차이 
+	
+	1. URL
+	 -네트워크 상에서 자원이 어디 있는 지 를 알려주기 위한 규약
+	 -웹 페이지를 찾기 위한 주소.
+	 -Uniform Resource Locator
+	 예) http://localhost/webPro/html/days02/ex03.html
+	 통신 규약, 인터넷 서비스 유형을 정의 예) http,https
+	 			도메인 접두사 ( http:// 기본값 www)
+	 scheme://prefix
+	 2. URI 
+	 
+	 
+	 -->
+</body>
+</html>

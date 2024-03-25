@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>html 기본 구조</h3>
+	<p>1. !는 선언문 !DOCTYPE html</p>
+	<!-- Ctrl +Shift 
+	<!DOCTYPE html> !선언문 : html5 문서임 html문서의 루트(Root) 엘리먼트(Element)
+<html>
+					html문서의 시작~ 끝
+					모든 요소의 부모 요소 (루트엘리먼트 html과  /html 사이에 다 있음)
+<head>			-	html 요소의 자식 요소 	
+					html 문서에 대한 메타 정보가 포함되어있음.
+<meta charset="UTF-8"> 인코딩 정보 포함.
+<title>Insert title here</title>	제목을 지정  / 브라우저의 제목 표시줄 또는 페이지 탭 표시
+</head>
+<body>  		 -	html 요소의 자식 요소 
+
+</body>
+</html>
+-->
+</body>
+</html>

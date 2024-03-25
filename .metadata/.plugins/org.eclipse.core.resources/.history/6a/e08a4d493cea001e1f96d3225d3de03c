@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>html 기본 구조</h3>
+	<p>1. !는 선언문 !DOCTYPE html</p>
+	<!-- Ctrl +Shift 
+	<!DOCTYPE html> !선언문 : html5 문서임 html문서의 루트(Root) 엘리먼트(Element)
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
+-->
+</body>
+</html>

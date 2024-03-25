@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3> html 색상 - 미리 정의된 색상명(140가지), RGB(RGBA), HEX,HSL(HSLA) </h3>
+	<!-- color : 색상 => 텍스트 색상  -->
+	<h1 style = "color: gray, font-size: 60px ;">Lorem ipsum dolor sit amet.</h1>
+	
+</body>
+</html>

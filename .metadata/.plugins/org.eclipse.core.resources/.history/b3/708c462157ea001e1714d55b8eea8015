@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- html 글꼴 : font 글꼴 ,글크기(size 속성 1~7),글색상 등등 나타내는 것  -->
+<!-- font[size=$]*7>{안녕하세요. 잘지내시나요} -->
+		<font size="1">안녕하세요. 잘지내시나요</font><br>
+		<font size="2">안녕하세요. 잘지내시나요</font><br>
+		<font size="3">안녕하세요. 잘지내시나요</font><br>
+		<font>안녕하세요. 잘지내시나요 폰트 기본값은 3</font><br> 
+		<font size="4">안녕하세요. 잘지내시나요</font><br>
+		<font size="5">안녕하세요. 잘지내시나요</font><br>
+		<font size="6">안녕하세요. 잘지내시나요</font><br>
+		<font size="7">안녕하세요. 잘지내시나요</font><br>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<pre>
+1. abbr :  abbreviation 약어  마우스 가져가면 설명 구문이 나옴
+2. address : 
+3. cite
+</pre>
+<abbr title = "hypertext markup language"> html </abbr>
+</body>
+</html>

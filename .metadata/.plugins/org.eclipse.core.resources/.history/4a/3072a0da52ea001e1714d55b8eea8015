@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>
+	html 인용문 - q,blockquote 
+	</h3>
+	
+	<pre>
+	1. q 
+		-짧은 인라인 인용문
+		-인라인 모드
+		-쌍따옴표
+	</pre>
+	마이클타이슨 어록 <br>
+	 <q>누구나 그럴싸한 계획을 가지고 있다. 쳐 맞기 전까지는</q> 
+	 <hr>
+	<pre>
+	2. blockquote
+	 -A long quotation  긴 인용문 
+	</pre>
+	<h3>엘버트 하버드</h3>
+	<blockquote>설명하지 마라. 친구라면 설명할 필요가 없고 적이라면 어짜피 너를 믿지 않는다.</blockquote>
+</body>
+</html>

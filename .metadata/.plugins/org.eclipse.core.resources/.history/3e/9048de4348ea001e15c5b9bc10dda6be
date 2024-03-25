@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+ /*  CSS 해당 스타일 적용 태그 */
+ /* 스타일 적용 대상 {
+ 	스타일속성 : 속성값;
+ 	스타일속성 : 속성값;
+ 	스타일속성 : 속성값;
+ 	스타일속성 : 속성값;
+ } */
+ 
+ h1 { border: solid gray; } 
+ h2 { 
+ 	border: solid 1px gray; 
+  } 
+  h3 {border: solid 1px gray; } 
+  
+  h4 { border: solid 1px gray; } 
+  h5 { 
+	border: solid 1px gray; 
+  } 
+ h6 {
+ 	border: solid 1px gray; 
+  } 
+
+</style>
+</head>
+<body>
+	<h3>html 제목(hn) - 웹페이지의 표시되는 제목 또는 부제목</h3>
+	
+	h$*6> { h 요소 설명}
+	<h1 style ="font=size : 60;">h 요소 설명 --heading == 머릿글 텍스트</h1>
+	<h2>h 요소 설명</h2>
+	<h3>h 요소 설명	- [블럭모드]/ 인라인모드</h3>
+	<h4>h 요소 설명</h4>
+	<h5>h 요소 설명</h5>
+	<h6>h 요소 설명</h6>
+	
+	<!-- W3C - html 태그는 대소문자를 구분하지 않는다. ex ) <BoDY></BoDY> (소문자 권장) -->
+</body>
+</html>

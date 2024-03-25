@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	html페이지에서 단락을 나누는 태그 
+	<p>
+	int i = 10;
+	System.out.println(i);
+	</p>
+	<pre> <!-- 미리 서식이 지정된 텍스트  -->
+	int i = 10;              사람들이 말하더라 새것마냥 키레이다테 
+	System.out.println(i);
+	</pre>
+</body>
+</html>
