@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="https://cdn.bloter.net/image/logo/favicon.ico">
+</head>
+<script>
+			function movef(){
+				var url = "https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fshare.php%3Fu%3Dhttps%253A%252F%252Fwww.bloter.net%252Fnews%252FarticleView.html%253Fidxno%253D613948&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=ko_KR";
+				open(url,"_blank")
+			}
+</script>
+<style>
+	
+</style>
+<body>
+ <pre>
+<a href= "https://www.bloter.net/">홈</a>><a href= "https://www.bloter.net/news/articleList.html?sc_section_code=S1N4&view_type=sm">IT·과학</a>><a href="https://www.bloter.net/news/articleList.html?sc_sub_section_code=S2N15&view_type=sm">IT기업</a>
+		<h2><strong><b>[LS 배·전·반 점검]②SK·LG·GS보다 늦은 전기차 충전…B2B 틈새시장 노린다</b></strong></h2>
+		
+ 이진솔 기자   입력 2024.03.26 08:00  수정 2024.03.26 10:13  댓글 0     <a href ="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fshare.php%3Fu%3Dhttps%253A%252F%252Fwww.bloter.net%252Fnews%252FarticleView.html%253Fidxno%253D613948&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=ko_KR"><img src="https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico"></a><a href = "https://twitter.com/intent/post?text=%5BLS%20%EB%B0%B0%C2%B7%EC%A0%84%C2%B7%EB%B0%98%20%EC%A0%90%EA%B2%80%5D%E2%91%A1SK%C2%B7LG%C2%B7GS%EB%B3%B4%EB%8B%A4%20%EB%8A%A6%EC%9D%80%20%EC%A0%84%EA%B8%B0%EC%B0%A8%20%EC%B6%A9%EC%A0%84%E2%80%A6B2B%20%ED%8B%88%EC%83%88%EC%8B%9C%EC%9E%A5%20%EB%85%B8%EB%A6%B0%EB%8B%A4%20https%3A%2F%2Fwww.bloter.net%2Fnews%2FarticleView.html%3Fidxno%3D613948"><img src= "//abs.twimg.com/favicons/twitter.3.ico"></a>
+		</pre>
+</body>
+</html>

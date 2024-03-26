@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+<style>
+	ul { background-color : brown;
+		padding: 0;
+		margin: 0;
+	}
+	ul li{
+	float : left
+	}
+	ul {
+
+	list-style-type: none;
+	overflow : hidden;
+	padding: 0;
+		margin: 0;
+	}
+	ul li a {
+		text-decoration: none;
+		color : white;
+		text-align : center;
+		border : 1px gray ;
+		padding : 16px;
+		
+	}
+	ul li a:hover {
+		color : black;
+	}
+
+</style>
+</head>
+<body>
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">News</a></li>
+			<li><a href="">Contact</a></li>
+			<li><a id="about" href="">About</a></li>
+		</ul>
+</body>
+</html>

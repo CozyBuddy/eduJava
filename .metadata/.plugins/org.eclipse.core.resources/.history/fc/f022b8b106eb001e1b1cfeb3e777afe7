@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+<style>
+	img {width : 100px; height: 66px;}
+</style>
+</head>
+<body>
+<pre>
+	img - 이미지 플로팅(float)
+	
+	float : 물위에 뜨다. 표류하다 .밀려가다
+	
+	css float 속성을 사용해서 이미지 + 텍스트의 설정.
+</pre>
+
+	<p><img src="" alt="" />
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia hic.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia hic.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia hic.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia hic.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia hic.
+	
+	</p>
+<script>
+	function fullimage() {
+		var url = "../images/cellphone.jpg";
+		location.href(url);
+	}
+</script>
+<a href = "javascript: fullimage() " target = "_blank"><img src="../images/cellphone.jpg" alt="사진 불러오기 실패" ></a>
+</body>
+</html>

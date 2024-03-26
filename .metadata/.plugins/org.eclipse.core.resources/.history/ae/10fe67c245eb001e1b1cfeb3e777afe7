@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+
+<style>
+	p, ul{border: 1px solid red };
+	li{ border: 1px solid blue };
+</style>
+</head>
+<body>
+<xmp>
+	1.html 모든 요소들은 유형에 따라 기본적인 표시(display)값이 있다.
+	2.display
+		ㄱ.블럭 모드 : 항상 새로운 라인에서 시작 
+						브라우저가 자동으로 여백 추가
+						너비가 부모의 100%로 설정.
+						p,ul.li,[div]
+      <!-- <address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video> -->                   
+      --> 
+		ㄴ.인라인 모드 :  새로운 라인에서 시작x , 내용(content)에 따라 너비 지정 span ex)<!--              
+      <a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
+      --> 
+      
+		
+</xmp>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia!</p>
+		<p>Molestiae veniam sint cupiditate officia nisi pariatur est. Sunt.</p>
+		<hr>
+		<ul>
+			<li>Lorem ipsum dolor.</li>
+			<li>Est laborum soluta.</li>
+			<li>Illo expedita pariatur.</li>
+			<li>Explicabo temporibus maxime.</li>
+		</ul>
+		<pre>
+		<div>
+		
+		</div>
+		
+		</pre>
+</body>
+</html>

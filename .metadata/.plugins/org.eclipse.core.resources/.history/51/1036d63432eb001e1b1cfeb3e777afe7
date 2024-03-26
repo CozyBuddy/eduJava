@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Lorem.</th>
+			<th>Debitis.</th>
+			<th>Beatae.</th>
+			<th>Corrupti.</th>
+			<th>Similique!</th>
+		</tr>
+		<tr>
+			<td>Lorem.</td>
+			<td>Vero!</td>
+			<td>Exercitationem.</td>
+			<td>Dolores.</td>
+			<td>Labore?</td>
+		</tr>
+		<tr>
+			<td>Lorem.</td>
+			<td>Id.</td>
+			<td>Quod!</td>
+			<td>At!</td>
+			<td>Ut!</td>
+		</tr>
+		<tr>
+			<td>Lorem.</td>
+			<td>Nesciunt?</td>
+			<td>Nulla.</td>
+			<td>Nulla.</td>
+			<td>Enim?</td>
+		</tr>
+		<tr>
+			<td>Lorem.</td>
+			<td>Nostrum.</td>
+			<td>Ipsam.</td>
+			<td>Vel!</td>
+			<td>Dolore.</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+
+</head>
+<body>
+<pre>
+	[table] 테이블 태그 
+	 - 데이터의 행과 열로 출력	
+		
+		<table>
+			
+		</table>
+</pre>
+</body>
+</html>

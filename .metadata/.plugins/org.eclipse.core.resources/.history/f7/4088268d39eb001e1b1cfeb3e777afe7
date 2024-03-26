@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+
+</head>
+<body>
+<pre>
+	관련 항목 집합을 그룹화 : 목록(list)
+	html 목록 태그 : 
+	 ㄴ 순서 있는 목록 : ol(ordered list) ,li
+	 ㄴ 순서 없는 목록 : ul(unordered list) , li
+</pre>
+
+<table sytle="width: 100%">
+	tr*2>th*2^^td*2>
+
+</table>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+
+</head>
+<body>
+<xmp>
+	1.html 모든 요소들은 유형에 따라 기본적인 표시(display)값이 있다.
+	2.display
+		ㄱ.블럭 모드 
+		ㄴ.인라인 모드
+		
+</xmp>
+</body>
+</html>

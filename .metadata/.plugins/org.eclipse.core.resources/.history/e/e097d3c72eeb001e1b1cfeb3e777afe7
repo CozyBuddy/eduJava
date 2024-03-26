@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+<style>
+	table {
+		width : 100%;
+	}
+</style>
+</head>
+<body>
+	<h3>수직 테이블 헤더</h3>
+	<table>
+		<tr>
+			<th>FirstName</th>
+			<td>Jill</td>
+			<td>Eve</td>
+		</tr>
+		<tr>
+			<th>LastName</th>
+			<td>Smith</td>
+			<td>Jackson</td>
+		</tr>
+		<tr>
+			<th>Age</th>
+			<td>25</td>
+			<td>32</td>
+		</tr>
+	</table>
+</body>
+</html>

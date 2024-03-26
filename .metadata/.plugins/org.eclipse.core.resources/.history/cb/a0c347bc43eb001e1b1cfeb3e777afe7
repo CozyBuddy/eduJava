@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+<style>
+	html, body{
+		margin:0; /* 위쪽 여백 */
+		padding:0;  /* 왼쪽 여백 */
+	}
+	ul{
+		/* border: solid 1px blue; */
+		background-color: #333;
+		list-style-type : none;
+		padding:0;
+		margin:0;
+		overflow: hidden;
+	}
+	ul li a{
+		color: white;
+		text-decoration: none;
+		/* border : 1px solid red; */
+		display: block;
+		text-align : center;
+		padding : 16px;
+	}
+
+	ul li:nth-child(1) {
+		background-color : red;
+	}
+	ul li {
+		float: left;
+	}
+</style>
+<style>
+ 	/* 활성화된 메뉴 class="active" 가지면 활성화된 메뉴 */
+ 	ul li a.active {
+ 		background-color: #04AA6d;
+ 		color : white;
+ 	}
+ 		/* :not() .active 클래스 속성을 가지지 않는 */
+	ul li a:hover :not(.active){
+		color: orange;
+		text-decoration:#111;
+	}
+</style>
+</head>
+<body>
+
+<!-- ul#main>li*4>a -->
+<ul id="main">
+	<li><a href="#">Home</a></li>
+	<li><a href="#" class="active">News</a></li>
+	<li><a href="#">Contact</a></li>
+	<li id="about"><a href="#">About</a></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+<style>
+	img {width : 100px; height: 66px;}
+	
+</style>
+</head>
+<body>
+\
+<script>
+	function fullimage() {
+		var url = "http://localhost/webPro/html/images/cellphone.jpg";
+		open(url,"_blank");
+	}
+</script>
+<a href onclick="fullimage()"><img src="../images/cellphone.jpg" alt="사진 불러오기 실패" ></a>
+</body>
+</html>

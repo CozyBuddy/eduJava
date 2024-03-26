@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+<style>
+	html, body{
+		margin:0; /* 위쪽 여백 */
+		padding:0;  /* 왼쪽 여백 */
+	}
+	ul{
+		background-color: #333;
+		list-style-type : none;
+		padding:0;
+		margin:0;
+	}
+	ul li a{
+		color: white;
+		text-decoration: none;
+		border : 1px solid red;
+		padding : 16px;
+	}
+	ul li a:hover{
+		color: orange;
+		text-decoration:#111;
+	}
+</style>
+</head>
+<body>
+
+<!-- ul#main>li*4>a -->
+<ul id="main">
+	<li><a href="#">Home</a></li>
+	<li><a href="#" class="active">News</a></li>
+	<li><a href="#">Contact</a></li>
+	<li><a href="#">About</a></li>
+</ul>
+</body>
+</html>

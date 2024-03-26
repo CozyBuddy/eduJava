@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+
+</head>
+<body>
+<pre>
+	1. 이미지 맵(map) 태그  - 이미지 맵을 정의하는 태그 
+	2. 이미지를 클릭 가능한 영역 - > 다른 작업 수행
+	3. map, area(클릭 가능한 영역) 태그 사용
+		usemap 속성
+</pre>
+<img src="../images/workplace.jpg" alt ="workplace.jpg">
+
+<map name= "workmap">
+	<area alt="computer" shape="rect" coords="34,44,270,350" href="ex03_computer.html">
+	<area alt="phone" shape="rect" coords="290,172,333,250" href= "ex03_phone.html">
+	<area alt="coffee" shape="circle" coords="337,300,44" href="ex03_coffee.html" onclick=""> <!-- on이벤트명 -->
+</map>
+</body>
+</html>

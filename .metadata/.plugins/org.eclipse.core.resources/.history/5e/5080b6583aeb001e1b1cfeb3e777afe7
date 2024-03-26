@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+
+</head>
+<body>
+<pre>
+	관련 항목 집합을 그룹화 : 목록(list)
+	html 목록 태그 : 
+	 ㄴ 순서 있는 목록 : ol(ordered list) ,li
+	 ㄴ 순서 없는 목록 : ul(unordered list) , li
+</pre>
+
+<table sytle="width: 100%" border="1px gray">
+	<tr>
+		<th>1조팀원</th>
+		<th>2조팀원</th>
+	</tr>
+	<tr>
+		<td style="vertical-align: top">
+		<ol type="1" >
+		<li>김진영</li>
+		<li>신슬기</li>
+		<li>신동우</li>
+		<li>이나딘</li>
+		<li>임민수</li>
+		<li>조융재</li>
+		<li>김세준</li>
+		
+		</ol>
+		</td>
+		<td style="vertical-align: top">
+		<ul type="circle">
+		<li>김진영</li>
+		<li>신슬기</li>
+		<li>신동우</li>
+		<li>이나딘</li>
+		<li>임민수</li>
+		<li>조융재</li>
+		<li>김세준</li>
+		
+		</ul>
+		
+		</td>
+	</tr>
+	<tr>
+		<td style="vertical-align: top">
+		<ol type="A" >
+		<li>김진영</li>
+		<li>신슬기</li>
+		<li>신동우</li>
+		<li>이나딘</li>
+		<li>임민수</li>
+		<li>조융재</li>
+		<li>김세준</li>
+		
+		</ol>
+		</td>
+		<td style="vertical-align: top">
+		<ul type="circle">
+		<li>김진영</li>
+		<li>신슬기</li>
+		<li>신동우</li>
+		<li>이나딘</li>
+		<li>임민수</li>
+		<li>조융재</li>
+		<li>김세준</li>
+		
+		</ul>
+		
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="vertical-align: top">
+		<ol type="1" >
+		<li>김진영</li>
+		<li>신슬기</li>
+		<li>신동우</li>
+		<li>이나딘</li>
+		<li>임민수</li>
+		<li>조융재</li>
+		<li>김세준</li>
+		
+		</ol>
+		
+		<ul type="circle">
+		<li>김진영</li>
+		<li>신슬기</li>
+		<li>신동우</li>
+		<li>이나딘</li>
+		<li>임민수</li>
+		<li>조융재</li>
+		<li>김세준</li>
+		
+		</ul>
+		
+		</td>
+	</tr>
+
+</table>
+</body>
+</html>

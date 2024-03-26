@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+
+</head>
+<body>
+<pre>
+	설명 목록 : 용어에 대한 설명이 포함된 용어 목록
+	dl
+</pre>
+</body>
+</html>

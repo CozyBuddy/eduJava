@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+
+</head>
+<body>
+<pre>
+		[picture] 태그
+		1. 반응형 웹을 만들때 사용
+			반응형 웹 디자인(rwd)
+		2. 다양한 장치(기기)마다 가장 알맞은 이미지를 선택해서 사용할 수 있도록 source 태그 설정 
+			서로 다른 이미지를 source 태그에 설정
+			media 속성
+		3. img 태그는 가장 마지막에 설정한다. 
+		
+</pre>
+<picture>
+	<!-- <source media = "브라우저 속성설정">  -->
+	<source media = "(min-width:650px)" srcset= "../images/img_pink_flowers.jpg"> 
+	<source>
+	<img>
+</picture>
+</body>
+</html>

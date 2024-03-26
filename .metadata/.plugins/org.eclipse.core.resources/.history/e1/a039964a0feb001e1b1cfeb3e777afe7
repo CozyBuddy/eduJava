@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+
+</head>
+<body>
+<pre>
+		<h3>span 태그</h3>
+			[span]
+			- 컨테이너(용기)
+			- 인라인모드
+			</pre>
+			
+<hr>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</body>
+</html>

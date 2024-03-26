@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" type = "image/x-icon" href="http://localhost/webPro/images/icons8-home-100.png">
+<style>
+	span {
+		background-color: orange;
+	}
+</style>
+<script>
+	function hide() {
+		document.getElementById("content").style.display="none";
+	}
+	function show() {
+		document.getElementById("content").style.display="inline";
+	}
+
+</script>
+</head>
+<body>
+<button onclick="hide()">감추기</button>
+<button onclick="show()">보이기</button>
+
+<div id="content">
+<br>
+	<span>김진영</span><br>
+	<span>신슬기</span><br>
+	<span>신동우</span><br>
+	</div>
+</body>
+</html>
